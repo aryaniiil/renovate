@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#ecefeb", "on-background": "#181c1a", "on-primary": "#ffffff", "surface": "#f7faf6", "error": "#ba1a1a", "outline": "#727972", "surface-dim": "#d8dbd7", "outline-variant": "#c2c8c1", "surface-container-highest": "#e0e3e0", "on-tertiary-fixed-variant": "#4a463d", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "on-secondary-container": "#795a26", "tertiary-fixed": "#e9e2d5", "inverse-on-surface": "#eef1ee", "on-error": "#ffffff", "tertiary-fixed-dim": "#ccc6b9", "on-error-container": "#93000a", "on-tertiary-container": "#aba599", "surface-bright": "#f7faf6", "surface-tint": "#466551", "inverse-primary": "#adcfb6", "on-secondary-fixed-variant": "#5d4210", "secondary-container": "#fed394", "on-primary-container": "#8cad96", "tertiary-container": "#3e3b32", "primary-fixed": "#c8ebd1", "primary": "#0c2b1a", "background": "#f7faf6", "inverse-surface": "#2d312f", "on-primary-fixed-variant": "#2f4d3a", "on-surface": "#181c1a", "primary-container": "#23412f", "secondary-fixed": "#ffddae", "on-secondary-fixed": "#281800", "on-tertiary-fixed": "#1e1b14", "primary-fixed-dim": "#adcfb6", "surface-container-lowest": "#ffffff", "secondary": "#785926", "secondary-fixed-dim": "#e9c083", "tertiary": "#28251d", "surface-container-high": "#e6e9e5", "surface-container-low": "#f1f4f1", "on-surface-variant": "#424843", "surface-variant": "#e0e3e0", "on-secondary": "#ffffff", "on-primary-fixed": "#022111" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1.25rem", "gutter": "1.5rem", "margin-lg": "4rem", "margin-md": "2.5rem", "space-xl": "3.5rem", "space-sm": "0.75rem", "margin": "1.25rem", "gutter-lg": "2.5rem", "space-xs": "0.375rem", "space-lg": "2rem" }, fontFamily: { "label-sm": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Newsreader"], "caption": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Newsreader"], "display-mobile": ["Newsreader"], "headline-sm": ["Newsreader"], "headline-md": ["Newsreader"], "body-lg": ["Inter"], "title": ["Inter"], "body-sm": ["Inter"], "display": ["Newsreader"] }, fontSize: { "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "caption": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }], "headline-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "display-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400" }], "title": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.025em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 pt-4 px-4 sm:px-6 pointer-events-none"><div class="pointer-events-auto max-w-[1240px] mx-auto h-[72px] bg-surface-container-lowest/95 backdrop-blur-md rounded-full px-6 flex items-center justify-between shadow-[0_1px_2px_rgba(27,31,29,0.04),0_16px_40px_-16px_rgba(27,31,29,0.14)]"><div class="flex items-center gap-3 shrink-0"><img alt="Hearthwell Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UqxpLYN9S3bKgo1WYLV6kzT0fYDjh5OgpO9-shqbF7ACjnzr-tkmUN44ZSQHBVA6jtYHrCd089un8jP8vRgh2fQGGAhphUCQINHxwFlszSLkRnQDWe34FqhPJZtvA62tHzO46OTemyA8bv9q9Zr7toQ14yEcLPld6D8S3TaOmaQohonNFneV7vNgotMlzZJ3OTeAq3MMmjrOu7oFDTOiQF55V87kgD4sGVtvEGuSU5"/><a class="font-title text-title tracking-tight text-primary-container hidden sm:inline" data-path="services" href="#">Hearthwell</a></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-primary-container font-semibold"><a aria-current="page" class="transition-colors text-primary-container font-semibold" data-path="services" href="#">Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="process" href="#">Process</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="pricing" href="#">Pricing</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="reviews" href="#">Reviews</a></nav><div class="flex items-center gap-4 shrink-0"><a class="hidden md:inline font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="tel:15550142290">+1 (555) 014-2290</a><a class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" data-path="quote-request" href="#">Get a free quote</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-[88px] min-h-screen"><div class="flex flex-col w-full bg-[#F6F2EA] text-[#1B1F1D]">
+<!-- 1. HERO SECTION -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 pt-8 pb-20 lg:pt-12 lg:pb-28">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+<!-- Left Column (6 cols) -->
+<div class="lg:col-span-6 flex flex-col items-start">
+<span class="inline-flex items-center text-[13px] font-semibold uppercase tracking-[0.08em] text-[#B8935A] mb-4">
+          Licensed · Insured · 2-Year Warranty
+        </span>
+<h1 class="font-headline-lg text-[48px] sm:text-[62px] lg:text-[76px] leading-[1.05] tracking-[-0.02em] font-medium text-[#1B1F1D] mb-6">
+          Your home, renovated with care and finished on time.
+        </h1>
+<p class="font-body-lg text-[18px] leading-[28px] text-[#5E655F] max-w-[500px] mb-8">
+          Kitchens, bathrooms, flooring, and full-home remodels, planned in detail, priced upfront, and built by one accountable team.
+        </p>
+<!-- CTA Row -->
+<div class="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 h-[52px] rounded-full bg-[#23412F] text-white font-label-md text-label-md hover:bg-[#1B1F1D] transition-all shadow-[0_4px_16px_rgba(35,65,47,0.2)]" href="#quote-form">
+<span>Request a consultation</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-7 py-3.5 h-[52px] rounded-full bg-white text-[#1B1F1D] border border-[#E4DDD0] font-label-md text-label-md hover:bg-[#ECE5D8] transition-colors shadow-sm" href="#projects">
+            See our projects
+          </a>
+</div>
+<!-- Trust Row -->
+<div class="flex flex-wrap items-center gap-4 text-body-sm text-[#5E655F] pt-2">
+<div class="flex items-center gap-1.5">
+<div class="flex text-[#B8935A]">
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-medium text-[#1B1F1D]">4.9 from 212 verified reviews</span>
+</div>
+<div class="h-4 w-[1px] bg-[#E4DDD0] hidden sm:block"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">verified</span>
+<span>Fixed-price contracts</span>
+</div>
+</div>
+</div>
+<!-- Right Column (6 cols) -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full h-[520px] sm:h-[620px] rounded-[32px] overflow-hidden border border-[#E4DDD0] shadow-[0_16px_40px_-16px_rgba(27,31,29,0.14)]">
+<img class="w-full h-full object-cover" data-alt="Expansive architectural kitchen renovation with honed travertine waterfall island, bespoke white oak flat-panel cabinetry, warm directional sunlight, burnished brass tapware, and steel-framed glass doors leading to a courtyard garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWc1QZtPzLYwChKnzLrS-PxbuAgzwpjD6Jf56Vz9swr9mcsMOleuG0Vqg0p3qphnNNKQyHCNn2sGigADi-ISjf3zNoUclKSswLBr1wW7BQpmRwxRVz2M5KH8h9a8vA6SoYjRcifduM-9y-QP6rPiNa1zchLTBjARAbXxNuL1_nv6XGOaZQpJ4ozs-Al4QTNQ32gWd18D89lflroYNAcvZCVyjcy1qAKkFXCOkK-95X"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+</div>
+<!-- Floating Card 1 (Bottom Left) -->
+<div class="absolute -bottom-6 left-4 sm:-left-6 bg-white/95 backdrop-blur-md rounded-[20px] p-5 border border-[#E4DDD0] shadow-[0_16px_36px_-12px_rgba(27,31,29,0.16)] w-[260px] sm:w-[280px]">
+<div class="flex items-center justify-between mb-2">
+<span class="text-caption font-semibold uppercase tracking-wider text-[#5E655F]">Project status</span>
+<span class="flex items-center gap-1.5 text-caption text-[#23412F] font-medium">
+<span class="w-2 h-2 rounded-full bg-[#23412F] animate-pulse"></span>
+              Active
+            </span>
+</div>
+<p class="font-label-md text-label-md text-[#1B1F1D] font-medium mb-3">Kitchen remodel · Week 4 of 6</p>
+<div class="w-full bg-[#ECE5D8] h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#23412F] h-full rounded-full" style="width: 68%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2 text-caption text-[#5E655F]">
+<span>Cabinetry install</span>
+<span class="font-semibold text-[#1B1F1D]">68%</span>
+</div>
+</div>
+<!-- Floating Card 2 (Top Right) -->
+<div class="absolute -top-4 right-4 sm:-right-4 bg-white/95 backdrop-blur-md rounded-[20px] px-6 py-4 border border-[#E4DDD0] shadow-[0_16px_36px_-12px_rgba(27,31,29,0.16)] text-center">
+<p class="font-headline-lg text-[36px] leading-[40px] font-medium text-[#1B1F1D]">150+</p>
+<p class="text-body-sm text-[#5E655F] mt-0.5">Homes completed</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. PROOF STRIP -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 mb-24">
+<div class="bg-white rounded-[24px] border border-[#E4DDD0] shadow-[0_8px_30px_rgba(27,31,29,0.04)] py-8 px-6 sm:px-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0">
+<div class="flex flex-col items-center text-center md:border-r md:border-[#E4DDD0] px-4">
+<span class="font-headline-lg text-[40px] leading-[46px] font-medium text-[#1B1F1D]">7 yrs</span>
+<span class="text-body-md text-[#5E655F] mt-1">Experience</span>
+</div>
+<div class="flex flex-col items-center text-center md:border-r md:border-[#E4DDD0] px-4">
+<span class="font-headline-lg text-[40px] leading-[46px] font-medium text-[#1B1F1D]">150+</span>
+<span class="text-body-md text-[#5E655F] mt-1">Projects delivered</span>
+</div>
+<div class="flex flex-col items-center text-center md:border-r md:border-[#E4DDD0] px-4">
+<span class="font-headline-lg text-[40px] leading-[46px] font-medium text-[#1B1F1D]">98%</span>
+<span class="text-body-md text-[#5E655F] mt-1">On-time completion</span>
+</div>
+<div class="flex flex-col items-center text-center px-4">
+<span class="font-headline-lg text-[40px] leading-[46px] font-medium text-[#1B1F1D]">2 yrs</span>
+<span class="text-body-md text-[#5E655F] mt-1">Workmanship warranty</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SERVICES (BENTO GRID) -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 mb-20" id="services">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#B8935A] block mb-2">What we do</span>
+<h2 class="font-headline-lg text-[38px] sm:text-[48px] leading-[1.1] font-medium text-[#1B1F1D]">Every room, handled end to end.</h2>
+</div>
+<p class="font-body-md text-[#5E655F] max-w-[360px] md:text-right">
+        One team from design to final clean, so nothing gets lost between trades.
+      </p>
+</div>
+<!-- 12-col Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Bento Item 1: Kitchens (7 cols) -->
+<div class="md:col-span-7 relative bg-white rounded-[24px] border border-[#E4DDD0] overflow-hidden min-h-[420px] flex flex-col justify-between group shadow-sm hover:shadow-md transition-shadow">
+<div class="absolute inset-0">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Bespoke architectural kitchen with tactile lime plaster walls, natural oak cabinets, honed soapstone island, warm pendant lighting, minimal hardware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpj8e_7REbqWv7RW-_TJwwl1vBqV-AIwxpeOm5p6xLoJ6Qxn7kK7I2yisMcAAfQ2lkWgTpXmvhdcGsong121OLPFXqRm7L8knplst3wYqRwG6FBOn3hXLr1_r0XvAgwkg2WE88YE2ZhTp3kqCq2HYX4sGZ9v5iLwC8-MPOwGzk5tkManGX7pLe3YCURhIWC7gumOXzflVJbPCyYrzwyxI9J-4QtdStSpy61Pxf8DqU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1B1F1D]/90 via-[#1B1F1D]/40 to-transparent"></div>
+</div>
+<div class="relative p-8 z-10">
+<span class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white font-caption text-caption uppercase tracking-wider mb-2">Core Practice</span>
+</div>
+<div class="relative p-8 z-10 text-white flex items-end justify-between">
+<div class="max-w-[380px]">
+<h3 class="font-headline-sm text-[28px] leading-[34px] font-medium mb-2">Kitchen remodeling</h3>
+<p class="text-white/80 text-body-sm mb-4">Complete structural reconfigurations, custom millwork, and refined natural stone integrations.</p>
+<div class="flex flex-wrap gap-4 text-caption text-white/90">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-[#fed394]">check_circle</span> Custom cabinetry</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-[#fed394]">check_circle</span> Stone worktops</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-white text-[#1B1F1D] flex items-center justify-center shrink-0 group-hover:bg-[#B8935A] group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Bento Item 2: Bathrooms (5 cols) -->
+<div class="md:col-span-5 bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-8 flex flex-col justify-between group shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-[200px] rounded-[16px] overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Serene minimalist bathroom with free-standing soaking tub, zellige ceramic wall tiles, brass shower fixtures, and fluted glass screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlUW9vHWkKG0hCe7uAmqDztCqlg40x8zKLPyg9zLym5s6De_q5pCEpFGn0VWf3EBQDKxzWUNzfyWaZ1NQY1zUx1trDxhR5cUrKO4cCIEZt54IOh5wt8oGzYnTZXkyOswZ9X-T4nx23J5-q2HRUjtRQH3gxbstbtTUWdy7OdMzt_P5wfx-Y-n9m2svCHCR5TDYFL9ZSn21-3Vhr9Fsx9qNFPCeB5qJMDe-mAAVlyhsz"/>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<h3 class="font-headline-sm text-[24px] leading-[30px] font-medium text-[#1B1F1D] mb-2">Bathroom renovation</h3>
+<p class="text-body-sm text-[#5E655F]">Spa-level primary retreats, waterproof membrane systems, and custom vanities.</p>
+</div>
+<div class="w-10 h-10 rounded-full border border-[#E4DDD0] bg-[#F6F2EA] text-[#1B1F1D] flex items-center justify-center shrink-0 group-hover:bg-[#23412F] group-hover:text-white transition-colors ml-4">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Bento Item 3: Flooring (4 cols) -->
+<div class="md:col-span-4 bg-[#ECE5D8] rounded-[24px] border border-[#E4DDD0] p-6 sm:p-8 flex flex-col justify-between group shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-[180px] rounded-[16px] overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up architectural detail of wide-plank European white oak herringbone hardwood floor, subtle matte natural oil finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDesT2sgLnPx6UBWChN5tS-1nSzjHtkENZT0mlHUv0p6t9qWGMuTBYpfvsBh1ukyZdTa12FK2LamrTWyMYOnCMZ14Tz3O_ujoet5Vxn4Ya_Wg3orXU79Axoyn9qQvU9zncIF4zEwe6PN2MMGZQIl7iPQPKU2KKkHMD0kWgDNq1q1oD4sFu4Tt2UAMrmqmaw5Bc_8hE8KE3iOVURvQ0SegQHE0rUQbNFnb9OAm2pNPgB"/>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<h3 class="font-headline-sm text-[22px] leading-[28px] font-medium text-[#1B1F1D] mb-1.5">Flooring</h3>
+<p class="text-body-sm text-[#5E655F]">Engineered wide-plank oak, chevron parquetry, and continuous acoustic subfloors.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-white text-[#1B1F1D] flex items-center justify-center shrink-0 group-hover:bg-[#23412F] group-hover:text-white transition-colors ml-4">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Bento Item 4: Exterior & Roofing (4 cols) -->
+<div class="md:col-span-4 bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-8 flex flex-col justify-between group shadow-sm hover:shadow-md transition-shadow">
+<div class="w-full h-[180px] rounded-[16px] overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern facade renovation with charred timber cladding, black standing seam metal roof details, architectural garden lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp1LppxDdBG7KJnmq6JbfebGZIgh5slRFIm9PPPC5jE2AD9BsD1HEIgFCpRWiOFqL1rMm-mRKialOlYFBor6RyFH0v9_cXsniKj9CfjaMgbW9L8fWiQ3cmMY6MO-lMb76nyNQSwMjsKX9p6vtSlb69-WEJewRENHStfVLKArd08iaIp6Cco8ZmxQASzUtDiYo1bwHRgVzWmEQf-rewb8pD9rKFYXmd1OkbKJP7MO4n"/>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<h3 class="font-headline-sm text-[22px] leading-[28px] font-medium text-[#1B1F1D] mb-1.5">Exterior & roofing</h3>
+<p class="text-body-sm text-[#5E655F]">High-performance envelope updates, standing seam roofing, and custom architectural doors.</p>
+</div>
+<div class="w-10 h-10 rounded-full border border-[#E4DDD0] bg-[#F6F2EA] text-[#1B1F1D] flex items-center justify-center shrink-0 group-hover:bg-[#23412F] group-hover:text-white transition-colors ml-4">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Bento Item 5: Full-home remodels (4 cols) -->
+<div class="md:col-span-4 bg-[#23412F] text-white rounded-[24px] border border-[#23412F] p-6 sm:p-8 flex flex-col justify-between group shadow-md hover:shadow-xl transition-shadow">
+<div class="pt-2">
+<span class="inline-block px-3 py-1 rounded-full bg-white/10 text-[#fed394] font-caption text-caption uppercase tracking-wider mb-4">Complete Transformation</span>
+<h3 class="font-headline-sm text-[26px] leading-[32px] font-medium mb-3">Full-home remodels</h3>
+<p class="text-body-sm text-white/80 leading-relaxed mb-6">
+            Comprehensive multi-level renovations executed with structural rigor, permit coordination, and unified architectural cohesion.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-6 border-t border-white/10">
+<span class="font-label-md text-label-md text-[#fed394] group-hover:underline">Explore full turnkey scope</span>
+<div class="w-10 h-10 rounded-full bg-[#B8935A] text-white flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. PROCESS SECTION -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 mb-20" id="process">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Sticky Left Column -->
+<div class="lg:col-span-5 lg:sticky lg:top-32">
+<span class="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#B8935A] block mb-2">How it works</span>
+<h2 class="font-headline-lg text-[38px] sm:text-[48px] leading-[1.1] font-medium text-[#1B1F1D] mb-6">Five clear steps. No surprises.</h2>
+<p class="font-body-md text-[#5E655F] leading-relaxed mb-8">
+          We eliminate the anxiety of residential construction through rigorous upfront specification, weekly photographic logs, and guaranteed project timelines.
+        </p>
+<a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-[#23412F] text-[#23412F] hover:bg-[#23412F] hover:text-white transition-colors font-label-md text-label-md shadow-sm" href="#quote-form">
+<span>Book a consultation</span>
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</a>
+</div>
+<!-- Right Column: Timeline Cards -->
+<div class="lg:col-span-7 relative flex flex-col gap-6">
+<!-- Dashed brass connecting line -->
+<div class="absolute left-8 top-10 bottom-10 w-[1px] border-l border-dashed border-[#B8935A] hidden sm:block pointer-events-none"></div>
+<!-- Step 1 -->
+<div class="relative bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-8 flex gap-5 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-[#B8935A] text-white flex items-center justify-center font-headline-sm text-[16px] font-medium shrink-0 z-10 shadow-sm">01</div>
+<div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] mb-1.5">Free consultation</h3>
+<p class="font-body-md text-[#5E655F]">We visit your property, laser-measure dimensions, assess load-bearing configurations, and listen to your vision. Completely free, no pressure.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-8 flex gap-5 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-[#B8935A] text-white flex items-center justify-center font-headline-sm text-[16px] font-medium shrink-0 z-10 shadow-sm">02</div>
+<div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] mb-1.5">Design and planning</h3>
+<p class="font-body-md text-[#5E655F]">Detailed architectural drawings, material moodboards, photorealistic 3D renders, and an itemized fixed-price contract with defined milestones.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-8 flex gap-5 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-[#B8935A] text-white flex items-center justify-center font-headline-sm text-[16px] font-medium shrink-0 z-10 shadow-sm">03</div>
+<div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] mb-1.5">Material selection</h3>
+<p class="font-body-md text-[#5E655F]">Select stones, natural timbers, brassware, and cabinetry profiles with direct guidance from our in-house material specialists and curated physical sample sets.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-8 flex gap-5 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-[#B8935A] text-white flex items-center justify-center font-headline-sm text-[16px] font-medium shrink-0 z-10 shadow-sm">04</div>
+<div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] mb-1.5">Construction</h3>
+<p class="font-body-md text-[#5E655F]">Dust-isolated site protection, precision craftsmanship, weekly digital progress reports, and one dedicated senior site lead reachable by phone every day.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-8 flex gap-5 items-start shadow-sm">
+<div class="w-10 h-10 rounded-full bg-[#B8935A] text-white flex items-center justify-center font-headline-sm text-[16px] font-medium shrink-0 z-10 shadow-sm">05</div>
+<div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] mb-1.5">Final walkthrough</h3>
+<p class="font-body-md text-[#5E655F]">A white-glove clean, zero-item punch list verification, and handover of your 2-year warranty binder. We do not call a project finished until you are delighted.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. FEATURED PROJECT WITH BEFORE / AFTER INTERACTIVE SLIDER -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 mb-24">
+<div class="bg-[#ECE5D8] rounded-[32px] border border-[#E4DDD0] p-8 sm:p-12 lg:p-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Left info -->
+<div class="lg:col-span-5">
+<span class="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#B8935A] block mb-2">Featured Project</span>
+<h2 class="font-headline-lg text-[36px] sm:text-[42px] leading-[1.1] font-medium text-[#1B1F1D] mb-4">The Calloway kitchen</h2>
+<p class="font-body-md text-[#5E655F] leading-relaxed mb-6">
+            A dated, closed-off galley kitchen rebuilt as an open, light-filled family space in six weeks. Walls removed, ceiling heightened, and framed with bespoke white oak joinery.
+          </p>
+<div class="flex flex-wrap gap-2.5 mb-8">
+<span class="px-4 py-1.5 bg-white rounded-full border border-[#E4DDD0] text-body-sm font-medium text-[#1B1F1D]">6 weeks</span>
+<span class="px-4 py-1.5 bg-white rounded-full border border-[#E4DDD0] text-body-sm font-medium text-[#1B1F1D]">Open-plan</span>
+<span class="px-4 py-1.5 bg-white rounded-full border border-[#E4DDD0] text-body-sm font-medium text-[#1B1F1D]">Oak & travertine</span>
+</div>
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-[#1B1F1D] border border-[#E4DDD0] font-label-md text-label-md hover:bg-[#F6F2EA] transition-colors shadow-sm" href="#projects">
+<span>View case study</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+<!-- Right: Interactive Before/After slider -->
+<div class="lg:col-span-7">
+<div class="relative w-full h-[380px] sm:h-[460px] rounded-[24px] overflow-hidden border border-[#E4DDD0] shadow-lg select-none group" id="slider-container">
+<!-- After Image (Base) -->
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="After renovation: Sunlit architectural kitchen with travertine monolithic island, custom oak millwork, warm brass tapware, and steel glass doors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBolFLycsQf6Rju9MSvvRF6HokdcU6CzcfmWixMfVYt0Q3tHXjBO-VtAhodDjD2F2ISitaMKHbfW2T7P24bPGduQr35MOSvrNFqwYER5Kh4kV8EnBwFUr3Tr0OkxVxF-E5U03gp6Uqt-mafFIt2TieTN-VreW8ajlb_lTFkuPXe0-3vfQVMnulS1U6tAYxugV1rHaaubiyXZkKJkkNnHQZBlEh8mf450Xe1n4xkakhC"/>
+<div class="absolute top-4 right-4 z-20 px-3.5 py-1 rounded-full bg-white/90 backdrop-blur-sm text-caption uppercase tracking-wider font-semibold text-[#1B1F1D] shadow-sm">
+              After
+            </div>
+<!-- Before Image (Overlay clipped) -->
+<div class="absolute inset-y-0 left-0 overflow-hidden z-10" id="before-wrapper" style="width: 50%;">
+<div class="relative w-full h-full" id="inner-before-img" style="width: 100%; min-width: 600px;">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Before renovation: Cramped 1980s galley kitchen with outdated laminate countertops, dark oak upper cabinets, fluorescent lighting, and beige vinyl floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6XvlK_dCzHqrANsWeoOTmcBPGOM9itg3A3mFT6syUdYbmiNBvKsX2wF0_R-Gf8e3ZwuD9-Od8Xi1ja2vCNVPusxaLlBO1bVrgRQj1hzP1_VM971yVnYiuNjckyZWLmzLWZpT93miO8UUm4KQmNqMMNb-7KAS3us3a_Btr5EXSB9p4FadLao1cU6PHB-NesG1zFZ8uoBLWtnAgTchAilORnKVj_z18YVPjvG7oIRlh"/>
+</div>
+<div class="absolute top-4 left-4 z-20 px-3.5 py-1 rounded-full bg-[#1B1F1D]/80 backdrop-blur-sm text-caption uppercase tracking-wider font-semibold text-white shadow-sm">
+                Before
+              </div>
+</div>
+<!-- Divider Line & Handle -->
+<div class="absolute inset-y-0 z-30 flex items-center justify-center cursor-ew-resize pointer-events-none" id="slider-handle" style="left: 50%;">
+<div class="w-[2px] h-full bg-[#B8935A]"></div>
+<div class="absolute w-10 h-10 rounded-full bg-white text-[#1B1F1D] border border-[#B8935A] shadow-md flex items-center justify-center pointer-events-auto cursor-ew-resize hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</div>
+</div>
+<!-- Hidden Range Input for full touch/mouse drag accessibility -->
+<input aria-label="Before and after comparison slider" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" id="slider-range" max="100" min="0" type="range" value="50"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. PROJECTS GRID -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 mb-20" id="projects">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div>
+<span class="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#B8935A] block mb-2">Recent work</span>
+<h2 class="font-headline-lg text-[38px] sm:text-[48px] leading-[1.1] font-medium text-[#1B1F1D]">Spaces we're proud of.</h2>
+</div>
+<!-- Filter chips -->
+<div class="flex flex-wrap gap-2" id="project-filters">
+<button class="px-5 py-2 rounded-full bg-[#23412F] text-white text-body-sm font-medium transition-all shadow-sm">All</button>
+<button class="px-5 py-2 rounded-full bg-white text-[#1B1F1D] border border-[#E4DDD0] text-body-sm font-medium hover:bg-[#ECE5D8] transition-all">Kitchens</button>
+<button class="px-5 py-2 rounded-full bg-white text-[#1B1F1D] border border-[#E4DDD0] text-body-sm font-medium hover:bg-[#ECE5D8] transition-all">Bathrooms</button>
+<button class="px-5 py-2 rounded-full bg-white text-[#1B1F1D] border border-[#E4DDD0] text-body-sm font-medium hover:bg-[#ECE5D8] transition-all">Flooring</button>
+<button class="px-5 py-2 rounded-full bg-white text-[#1B1F1D] border border-[#E4DDD0] text-body-sm font-medium hover:bg-[#ECE5D8] transition-all">Exteriors</button>
+</div>
+</div>
+<!-- 3-column grid of 6 cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+<!-- Project 1 -->
+<div class="group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[24px] overflow-hidden border border-[#E4DDD0] mb-4 relative bg-[#ECE5D8]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Pacific Heights kitchen renovation featuring lime wash walls, marble kitchen island, fluted oak cabinets, sculptural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEQVHj_h-p5eidmJJqCsMxtfU-koiEAi1nxYbHygkEkKTFqFMCgFoF496cn3SV4SZHwkdgG5xkGboc8ci1eKb0u-FOtPz55Na5XETtRtuPLiR7rusWGAZk0j0azKc2VqzjNPSRoThDjHBBEFYks-9B8aaRKBhVqjP4Sh6xtvT2mRVLtfnaZ5-Fui4EC_Mm8cOPQ1Vp3pmAtNjUuWtdLdpKbRerLXPF-6dbUqbdDgo2"/>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-caption uppercase tracking-wider font-semibold text-[#1B1F1D]">Kitchen</span>
+</div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] group-hover:text-[#B8935A] transition-colors">Pacific Heights Residence</h3>
+<p class="text-body-sm text-[#5E655F] mt-1">Pacific Heights · 8 weeks</p>
+</div>
+<!-- Project 2 -->
+<div class="group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[24px] overflow-hidden border border-[#E4DDD0] mb-4 relative bg-[#ECE5D8]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Noe Valley primary bath renovation with arched shower portal, tadelakt plaster, custom walnut vanity, unlacquered brass hardware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc4p2wmc7mFkCR9nFGAbH42p0DndcpK5EP98Qu1x1Q2I_DJAPu4nD-FyVAKfoIVLWRl4jMp9qeLaXFm9T5W_r6b8SAw2igP4K44s6lxf7uwKC6H_25PRpg2Am0OIx4-GtxViBH_DHT1fVSKXJF1q7sX0rbqjd9ZESFcv4Q5sl7zLHt3BagQQKVpBvTnhn-KpfO6C94eTCcqiPWP6YKlxhc-s9tEgy8gLbhZHraidw5"/>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-caption uppercase tracking-wider font-semibold text-[#1B1F1D]">Master Bath</span>
+</div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] group-hover:text-[#B8935A] transition-colors">Noe Valley Sanctuary</h3>
+<p class="text-body-sm text-[#5E655F] mt-1">Noe Valley · 5 weeks</p>
+</div>
+<!-- Project 3 -->
+<div class="group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[24px] overflow-hidden border border-[#E4DDD0] mb-4 relative bg-[#ECE5D8]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Marin County architectural estate renovation with seamless indoor outdoor transitions, white oak herringbone floors, stone hearth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGf5oSRCKwxcDA89me9BkLyuZmZT0-2cryrUkyu7iy55dzVo7ptqVJzz1LyQ2nMNaZUhMEiNIIc8vxqGB0nCCs0ZniNm375wqNcOfLAkZ9lRGiSuxDCZVPjEfwFlG17EuRo6GOl1AyTJExi_GJ-1WYuZXpKgiv6rol04cn8D5T48Nn3QS92cJp8813q24s4yV0iEA4aak69tWEPrGxQN11LhBc4Hbf15QuAIgNRjsw"/>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-caption uppercase tracking-wider font-semibold text-[#1B1F1D]">Whole Home</span>
+</div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] group-hover:text-[#B8935A] transition-colors">Marin Hillside Estate</h3>
+<p class="text-body-sm text-[#5E655F] mt-1">Marin County · 12 weeks</p>
+</div>
+<!-- Project 4 -->
+<div class="group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[24px] overflow-hidden border border-[#E4DDD0] mb-4 relative bg-[#ECE5D8]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Presidio Heights kitchen remodel with integrated Wolf appliances, honed quartzite countertops, reeded glass pocket pantry doors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm4PuetKOMg7iGVwaSpuBZw9lbGZWs4BZ50RLt-skcAbGOmnvDZ-DpEHfrWpp_Z3j1D-QepOLaPSd18Xx4KTeq73dqUeuDV1sBAfkXAHU3PH6_Icp44aVyyS6KWfO7eiZcPWusm2B_Y1q1a3uFlaaInOEKUyJSpcyWNtz4HjydACvGMnQR2Vt8B_X1e88fuffoCmMrHx2P3ZgAu04G0V7YjbYgZ1VnzztVg975UBo-"/>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-caption uppercase tracking-wider font-semibold text-[#1B1F1D]">Kitchen</span>
+</div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] group-hover:text-[#B8935A] transition-colors">Presidio Heights Pantry</h3>
+<p class="text-body-sm text-[#5E655F] mt-1">Presidio Heights · 6 weeks</p>
+</div>
+<!-- Project 5 -->
+<div class="group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[24px] overflow-hidden border border-[#E4DDD0] mb-4 relative bg-[#ECE5D8]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Russian Hill modern flat renovation showing expansive living room with natural wide plank oak flooring and minimalist custom library shelving" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdOPZbYYRsLBKlXWR0Qoe2Y7V2S0VLty97HcDuhfoguXMazu2MWD9OWRGfIl3q0uYAlcCjBAR0y8xNrbrc9uywu5CX_3cUv2RS_xEAOHr7HyioEynCEwpjfQ5jlU9jjHPb1zoqYvxK1tiJ7MoSydznxxjkyd3zffApLjmSMEl55MMCYLmemWeW1lRTIifsU0SNPKZ2pAIx8v9WgUgO4mSjOaa3MFjDo8QT94Cpdnjt"/>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-caption uppercase tracking-wider font-semibold text-[#1B1F1D]">Flooring</span>
+</div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] group-hover:text-[#B8935A] transition-colors">Russian Hill Flat</h3>
+<p class="text-body-sm text-[#5E655F] mt-1">Russian Hill · 4 weeks</p>
+</div>
+<!-- Project 6 -->
+<div class="group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[24px] overflow-hidden border border-[#E4DDD0] mb-4 relative bg-[#ECE5D8]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Seacliff cliffside exterior remodel with cedar siding, architectural steel canopy, concealed downspouts, and panoramic ocean glazing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaKVyIWEGy4CaeiKLkLKKtF0ladeN_uO9CabkNUcB3S24_cDSw9MXPDK-JMD-oYKAPVqETEdtZLQioJNb-LQXqyy4DhgG3qpQ_O9im6MIbK5WsTPR2x1-p6U2FI7FPcwPRoXHSxxPFGKZ6Fpt2SATnD40PScwHz_Nl5iu-Dyk20pMeskkgmS4zoCwAT31c-T21TSmt72fpxhRb45gj3FYmg5tAa5ZAG3LqqWQtOudK"/>
+<span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-caption uppercase tracking-wider font-semibold text-[#1B1F1D]">Exteriors</span>
+</div>
+<h3 class="font-headline-sm text-[22px] font-medium text-[#1B1F1D] group-hover:text-[#B8935A] transition-colors">Seacliff Modernist Villa</h3>
+<p class="text-body-sm text-[#5E655F] mt-1">Seacliff · 9 weeks</p>
+</div>
+</div>
+<!-- Centered CTA -->
+<div class="text-center">
+<button class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white text-[#1B1F1D] border border-[#E4DDD0] font-label-md text-label-md hover:bg-[#ECE5D8] transition-colors shadow-sm">
+<span>View all projects</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- 7. PRICING CLARITY -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 mb-20" id="pricing">
+<div class="text-center max-w-[640px] mx-auto mb-16">
+<span class="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#B8935A] block mb-2">Transparent pricing</span>
+<h2 class="font-headline-lg text-[38px] sm:text-[48px] leading-[1.1] font-medium text-[#1B1F1D] mb-4">Know what it costs before we start.</h2>
+<p class="font-body-md text-[#5E655F]">Every Hearthwell project carries an ironclad fixed-price guarantee after on-site scope verification. No creeping retainers or change-order inflation.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+<!-- Tier 1: Essential -->
+<div class="bg-white rounded-[24px] border border-[#E4DDD0] p-8 flex flex-col justify-between shadow-sm">
+<div>
+<span class="text-caption font-semibold uppercase tracking-wider text-[#5E655F] block mb-2">Tier 01</span>
+<h3 class="font-headline-sm text-[26px] font-medium text-[#1B1F1D] mb-2">Essential</h3>
+<p class="text-body-sm text-[#5E655F] mb-6">Refresh and repair, cosmetic upgrades.</p>
+<div class="py-4 border-y border-[#E4DDD0] mb-6">
+<span class="text-caption text-[#5E655F] block">Commitment</span>
+<span class="font-label-md text-label-md font-semibold text-[#1B1F1D]">Fixed quote after consultation</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Surface refinishing & repainting
+            </li>
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Plumbing fixture and brassware replacement
+            </li>
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Engineered floor re-installation
+            </li>
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Cosmetic tile and backsplash update
+            </li>
+</ul>
+</div>
+<div>
+<p class="text-caption text-[#5E655F] mb-4">Typical timeline: 3–4 weeks</p>
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-full bg-white border border-[#23412F] text-[#23412F] font-label-md text-label-md hover:bg-[#ECE5D8] transition-colors" href="#quote-form">
+            Get an estimate
+          </a>
+</div>
+</div>
+<!-- Tier 2: Refined (Elevated) -->
+<div class="bg-white rounded-[24px] border-2 border-[#23412F] p-8 flex flex-col justify-between shadow-[0_16px_40px_-16px_rgba(35,65,47,0.18)] relative lg:-translate-y-2">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2">
+<span class="px-4 py-1 rounded-full bg-[#B8935A] text-white font-caption text-[11px] font-semibold tracking-wider uppercase shadow-sm">
+            Most popular
+          </span>
+</div>
+<div>
+<span class="text-caption font-semibold uppercase tracking-wider text-[#23412F] block mb-2">Tier 02</span>
+<h3 class="font-headline-sm text-[26px] font-medium text-[#1B1F1D] mb-2">Refined</h3>
+<p class="text-body-sm text-[#5E655F] mb-6">Full room remodel with custom finishes.</p>
+<div class="py-4 border-y border-[#E4DDD0] mb-6">
+<span class="text-caption text-[#5E655F] block">Commitment</span>
+<span class="font-label-md text-label-md font-semibold text-[#23412F]">Fixed quote after consultation</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Complete gut and layout optimization
+            </li>
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Bespoke cabinetry & natural stone slabs
+            </li>
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Electrical overhaul & warm lighting design
+            </li>
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Subfloor leveling and acoustic insulation
+            </li>
+</ul>
+</div>
+<div>
+<p class="text-caption text-[#5E655F] mb-4">Typical timeline: 6–8 weeks</p>
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-full bg-[#23412F] text-white font-label-md text-label-md hover:bg-[#1B1F1D] transition-colors shadow-sm" href="#quote-form">
+            Get an estimate
+          </a>
+</div>
+</div>
+<!-- Tier 3: Signature -->
+<div class="bg-white rounded-[24px] border border-[#E4DDD0] p-8 flex flex-col justify-between shadow-sm">
+<div>
+<span class="text-caption font-semibold uppercase tracking-wider text-[#5E655F] block mb-2">Tier 03</span>
+<h3 class="font-headline-sm text-[26px] font-medium text-[#1B1F1D] mb-2">Signature</h3>
+<p class="text-body-sm text-[#5E655F] mb-6">Structural changes and multi-room transformations.</p>
+<div class="py-4 border-y border-[#E4DDD0] mb-6">
+<span class="text-caption text-[#5E655F] block">Commitment</span>
+<span class="font-label-md text-label-md font-semibold text-[#1B1F1D]">Fixed quote after consultation</span>
+</div>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Load-bearing beam removals & steel frames
+            </li>
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Multi-room architectural continuity
+            </li>
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Exterior window & glass wall installations
+            </li>
+<li class="flex items-center gap-3 text-body-sm text-[#1B1F1D]">
+<span class="material-symbols-outlined text-[18px] text-[#23412F]">check</span>
+              Dedicated project director on site daily
+            </li>
+</ul>
+</div>
+<div>
+<p class="text-caption text-[#5E655F] mb-4">Typical timeline: 10–14 weeks</p>
+<a class="w-full inline-flex items-center justify-center py-3.5 rounded-full bg-white border border-[#23412F] text-[#23412F] font-label-md text-label-md hover:bg-[#ECE5D8] transition-colors" href="#quote-form">
+            Get an estimate
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. TESTIMONIALS -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 mb-20" id="reviews">
+<div class="mb-12">
+<span class="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#B8935A] block mb-2">Kind words</span>
+<h2 class="font-headline-lg text-[38px] sm:text-[48px] leading-[1.1] font-medium text-[#1B1F1D]">What homeowners say.</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left Column: Rating Card (4 cols) -->
+<div class="lg:col-span-4 bg-[#23412F] text-white rounded-[24px] p-8 flex flex-col justify-between">
+<div>
+<span class="inline-block px-3 py-1 rounded-full bg-white/10 text-white font-caption text-caption uppercase tracking-wider mb-6">100% Verified Clients</span>
+<div class="font-headline-lg text-[64px] leading-[1] font-medium text-white mb-3">4.9</div>
+<div class="flex text-[#B8935A] mb-3">
+<span class="material-symbols-outlined text-[24px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[24px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[24px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[24px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[24px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md text-white/80">Based on 212 verified client reviews throughout the Bay Area.</p>
+</div>
+<div class="pt-8 border-t border-white/10">
+<p class="text-caption text-white/60 uppercase tracking-wider mb-1">Our Pledge</p>
+<p class="text-body-sm text-white/90">Zero unfinished punch lists. Every review reflects a completed project with warranty enacted.</p>
+</div>
+</div>
+<!-- Right Column: 2x2 Grid of White Review Cards (8 cols) -->
+<div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div class="bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-7 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex text-[#B8935A] mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md text-[#1B1F1D] leading-relaxed mb-6">
+              "They finished a day early and the site was spotless every evening. We've already booked our bathroom with them."
+            </p>
+</div>
+<div>
+<p class="font-label-md text-label-md text-[#1B1F1D] font-semibold">Priya & Daniel</p>
+<p class="text-caption text-[#5E655F]">Kitchen remodel · Pacific Heights</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-7 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex text-[#B8935A] mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md text-[#1B1F1D] leading-relaxed mb-6">
+              "The fixed-price scope gave us complete peace of mind. Not a single surprise surcharge throughout the 7-week project."
+            </p>
+</div>
+<div>
+<p class="font-label-md text-label-md text-[#1B1F1D] font-semibold">Marcus K.</p>
+<p class="text-caption text-[#5E655F]">Master Suite · Noe Valley</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-7 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex text-[#B8935A] mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md text-[#1B1F1D] leading-relaxed mb-6">
+              "The craftsmanship on our custom white oak cabinetry is heirloom quality. Highly recommend their in-house joiners."
+            </p>
+</div>
+<div>
+<p class="font-label-md text-label-md text-[#1B1F1D] font-semibold">Elena & David</p>
+<p class="text-caption text-[#5E655F]">Full-home · Marin County</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-white rounded-[24px] border border-[#E4DDD0] p-6 sm:p-7 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex text-[#B8935A] mb-3">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-body-md text-[#1B1F1D] leading-relaxed mb-6">
+              "Clear weekly updates from our site manager kept our family relaxed throughout construction while we lived downstairs."
+            </p>
+</div>
+<div>
+<p class="font-label-md text-label-md text-[#1B1F1D] font-semibold">Chloe S.</p>
+<p class="text-caption text-[#5E655F]">Architectural Kitchen · Presidio</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. QUOTE FORM CTA -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 mb-24" id="quote-form">
+<div class="bg-[#23412F] rounded-[32px] p-8 sm:p-12 lg:p-16 border border-[#23412F] shadow-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column (5 cols) -->
+<div class="lg:col-span-5 text-white">
+<span class="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#fed394] block mb-2">Get Started</span>
+<h2 class="font-headline-lg text-[40px] sm:text-[48px] leading-[1.08] font-medium text-white mb-6">Let's plan your renovation.</h2>
+<p class="text-body-lg text-white/85 leading-relaxed mb-8">
+            Tell us about your space. We'll reply within 24 hours with next steps and schedule an on-site consultation.
+          </p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[#fed394]">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="text-body-md text-white font-medium">Free site visit & laser measurement</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[#fed394]">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="text-body-md text-white font-medium">Itemized fixed-price quote</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-[#fed394]">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="text-body-md text-white font-medium">No obligation to build</span>
+</div>
+</div>
+</div>
+<!-- Right Column (7 cols): Form Card -->
+<div class="lg:col-span-7">
+<div class="bg-white rounded-[24px] p-6 sm:p-8 lg:p-10 shadow-2xl">
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Our studio director will contact you within 24 hours.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-[#1B1F1D] mb-1.5" for="full-name">Full name</label>
+<input class="w-full h-[52px] px-4 rounded-[14px] bg-white border border-[#E4DDD0] text-body-md text-[#1B1F1D] placeholder:text-[#5E655F]/50 focus:outline-none focus:border-[#23412F] focus:ring-2 focus:ring-[#23412F]/10" id="full-name" placeholder="Elena Rostova" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-[#1B1F1D] mb-1.5" for="phone-number">Phone number</label>
+<input class="w-full h-[52px] px-4 rounded-[14px] bg-white border border-[#E4DDD0] text-body-md text-[#1B1F1D] placeholder:text-[#5E655F]/50 focus:outline-none focus:border-[#23412F] focus:ring-2 focus:ring-[#23412F]/10" id="phone-number" placeholder="+1 (415) 800-2490" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-[#1B1F1D] mb-1.5" for="email">Email address</label>
+<input class="w-full h-[52px] px-4 rounded-[14px] bg-white border border-[#E4DDD0] text-body-md text-[#1B1F1D] placeholder:text-[#5E655F]/50 focus:outline-none focus:border-[#23412F] focus:ring-2 focus:ring-[#23412F]/10" id="email" placeholder="elena@example.com" required="" type="email"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-[#1B1F1D] mb-1.5" for="service">Service</label>
+<div class="relative">
+<select class="w-full h-[52px] px-4 rounded-[14px] bg-white border border-[#E4DDD0] text-body-md text-[#1B1F1D] focus:outline-none focus:border-[#23412F] focus:ring-2 focus:ring-[#23412F]/10 appearance-none" id="service">
+<option>Kitchen Remodeling</option>
+<option>Bathroom Renovation</option>
+<option>Flooring & Subfloors</option>
+<option>Exterior & Roofing</option>
+<option>Full-home Remodel</option>
+</select>
+<span class="material-symbols-outlined text-[20px] text-[#5E655F] absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-[#1B1F1D] mb-1.5" for="timeline">Preferred timeline</label>
+<div class="relative">
+<select class="w-full h-[52px] px-4 rounded-[14px] bg-white border border-[#E4DDD0] text-body-md text-[#1B1F1D] focus:outline-none focus:border-[#23412F] focus:ring-2 focus:ring-[#23412F]/10 appearance-none" id="timeline">
+<option>Immediate (1–2 months)</option>
+<option>3–6 months</option>
+<option>Planning stage / Future</option>
+</select>
+<span class="material-symbols-outlined text-[20px] text-[#5E655F] absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-[#1B1F1D] mb-1.5" for="message">About your project</label>
+<textarea class="w-full p-4 rounded-[14px] bg-white border border-[#E4DDD0] text-body-md text-[#1B1F1D] placeholder:text-[#5E655F]/50 focus:outline-none focus:border-[#23412F] focus:ring-2 focus:ring-[#23412F]/10 resize-none" id="message" placeholder="Tell us about the space, address or neighborhood, and any specific goals..." rows="3"></textarea>
+</div>
+<button class="w-full h-[52px] rounded-full bg-[#1E3827] hover:bg-[#2E523A] text-white font-label-md text-label-md flex items-center justify-center gap-2 transition-colors shadow-md mt-2" type="submit">
+<span>Request my free quote</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<p class="text-center text-caption text-[#5E655F] pt-2">
+                We respect your privacy. No spam, ever.
+              </p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. FAQ SECTION -->
+<section class="max-w-[1240px] mx-auto w-full px-4 sm:px-6 lg:px-8 py-12 mb-28">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column -->
+<div class="lg:col-span-5">
+<span class="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#B8935A] block mb-2">Common Inquiries</span>
+<h2 class="font-headline-lg text-[38px] sm:text-[48px] leading-[1.1] font-medium text-[#1B1F1D] mb-4">Questions, answered.</h2>
+<p class="font-body-md text-[#5E655F] leading-relaxed mb-6">
+          Renovation doesn't need to be obscure. Here is how we manage schedules, safety, and warranties.
+        </p>
+<a class="inline-flex items-center gap-2 text-label-md font-semibold text-[#B8935A] hover:underline underline-offset-4" href="#quote-form">
+<span>Talk to our team</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Right Column: Accordion Items -->
+<div class="lg:col-span-7 flex flex-col gap-4" id="faq-accordion">
+<!-- Accordion Item 1 (Expanded) -->
+<div class="bg-white rounded-[20px] border border-[#E4DDD0] overflow-hidden transition-all shadow-sm">
+<button class="w-full px-6 sm:px-8 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[20px] font-medium text-[#1B1F1D]">How long does a typical kitchen remodel take?</span>
+<div class="w-8 h-8 rounded-full bg-[#F6F2EA] flex items-center justify-center shrink-0 ml-4 transition-transform faq-icon rotate-45 text-[#23412F]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="px-6 sm:px-8 pb-6 text-body-md text-[#5E655F] leading-relaxed faq-content">
+            Most kitchens take 5 to 7 weeks from demo to final finishes. Custom cabinetry lead times are accounted for during preliminary design so work begins only after all critical materials have reached our warehouse, minimizing disruption to your daily life.
+          </div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="bg-white rounded-[20px] border border-[#E4DDD0] overflow-hidden transition-all shadow-sm">
+<button class="w-full px-6 sm:px-8 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[20px] font-medium text-[#1B1F1D]">Do you provide fixed prices?</span>
+<div class="w-8 h-8 rounded-full bg-[#F6F2EA] flex items-center justify-center shrink-0 ml-4 transition-transform faq-icon text-[#23412F]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="px-6 sm:px-8 pb-6 text-body-md text-[#5E655F] leading-relaxed faq-content hidden">
+            Yes. Every proposal we produce includes a guaranteed fixed price based on finalized architectural drawings and finish selections. The price you sign is the price you pay unless you deliberately request an alteration of scope.
+          </div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="bg-white rounded-[20px] border border-[#E4DDD0] overflow-hidden transition-all shadow-sm">
+<button class="w-full px-6 sm:px-8 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[20px] font-medium text-[#1B1F1D]">Are you licensed and insured?</span>
+<div class="w-8 h-8 rounded-full bg-[#F6F2EA] flex items-center justify-center shrink-0 ml-4 transition-transform faq-icon text-[#23412F]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="px-6 sm:px-8 pb-6 text-body-md text-[#5E655F] leading-relaxed faq-content hidden">
+            Fully licensed Class-B General Contractor with comprehensive $2M general liability coverage and full workers' compensation policies for every on-site operative. Proof of coverage is delivered directly to you before kickoff.
+          </div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="bg-white rounded-[20px] border border-[#E4DDD0] overflow-hidden transition-all shadow-sm">
+<button class="w-full px-6 sm:px-8 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[20px] font-medium text-[#1B1F1D]">Can I live at home during the work?</span>
+<div class="w-8 h-8 rounded-full bg-[#F6F2EA] flex items-center justify-center shrink-0 ml-4 transition-transform faq-icon text-[#23412F]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="px-6 sm:px-8 pb-6 text-body-md text-[#5E655F] leading-relaxed faq-content hidden">
+            Yes, for kitchens, individual bathrooms, and localized floor renovations. We deploy HEPA air scrubbers, heavy zip-wall plastic barriers, and daily floor coverings so your living zones remain dust-isolated and calm.
+          </div>
+</div>
+<!-- Accordion Item 5 -->
+<div class="bg-white rounded-[20px] border border-[#E4DDD0] overflow-hidden transition-all shadow-sm">
+<button class="w-full px-6 sm:px-8 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-[20px] font-medium text-[#1B1F1D]">What does the warranty cover?</span>
+<div class="w-8 h-8 rounded-full bg-[#F6F2EA] flex items-center justify-center shrink-0 ml-4 transition-transform faq-icon text-[#23412F]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+</button>
+<div class="px-6 sm:px-8 pb-6 text-body-md text-[#5E655F] leading-relaxed faq-content hidden">
+            Our comprehensive 2-year warranty covers all structural adjustments, joinery alignments, plumbing junctions, waterproofing membranes, and electrical components. If a hinge loosens or grout cracks, we return and resolve it promptly without charge.
+          </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive UI Micro-Interactions Script -->
+<script>
+  // 1. Before/After Comparison Slider Logic
+  const sliderRange = document.getElementById('slider-range');
+  const beforeWrapper = document.getElementById('before-wrapper');
+  const sliderHandle = document.getElementById('slider-handle');
+
+  if (sliderRange && beforeWrapper && sliderHandle) {
+    sliderRange.addEventListener('input', (e) => {
+      const value = e.target.value;
+      beforeWrapper.style.width = value + '%';
+      sliderHandle.style.left = value + '%';
+    });
+  }
+
+  // 2. FAQ Accordion Logic
+  function toggleFaq(button) {
+    const card = button.parentElement;
+    const content = card.querySelector('.faq-content');
+    const icon = card.querySelector('.faq-icon');
+    const isHidden = content.classList.contains('hidden');
+
+    // Close all other rows
+    document.querySelectorAll('#faq-accordion .faq-content').forEach(c => c.classList.add('hidden'));
+    document.querySelectorAll('#faq-accordion .faq-icon').forEach(i => i.classList.remove('rotate-45'));
+
+    if (isHidden) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-45');
+    }
+  }
+
+  // 3. Project Filter Chips Active Toggle
+  const filterButtons = document.querySelectorAll('#project-filters button');
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.className = "px-5 py-2 rounded-full bg-white text-[#1B1F1D] border border-[#E4DDD0] text-body-sm font-medium hover:bg-[#ECE5D8] transition-all";
+      });
+      btn.className = "px-5 py-2 rounded-full bg-[#23412F] text-white text-body-sm font-medium transition-all shadow-sm";
+    });
+  });
+</script></main><footer class="w-full bg-tertiary text-inverse-on-surface rounded-t-[32px] pt-16 pb-12 mt-20"><div class="max-w-[1240px] mx-auto px-6 lg:px-8"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-16"><div class="space-y-4"><div class="flex items-center gap-3"><img alt="Hearthwell Brand Logo" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1UqxpLYN9S3bKgo1WYLV6kzT0fYDjh5OgpO9-shqbF7ACjnzr-tkmUN44ZSQHBVA6jtYHrCd089un8jP8vRgh2fQGGAhphUCQINHxwFlszSLkRnQDWe34FqhPJZtvA62tHzO46OTemyA8bv9q9Zr7toQ14yEcLPld6D8S3TaOmaQohonNFneV7vNgotMlzZJ3OTeAq3MMmjrOu7oFDTOiQF55V87kgD4sGVtvEGuSU5"/><span class="font-headline-sm text-headline-sm text-surface-container-lowest">Hearthwell</span></div><p class="font-body-sm text-body-sm text-tertiary-fixed-dim leading-relaxed">Renovation, done properly. Architectural refinement and sensory domestic comfort for discerning residences.</p></div><div><h4 class="font-label-md text-label-md text-secondary-fixed mb-4">Services</h4><ul class="space-y-2.5 font-body-sm text-body-sm text-tertiary-fixed-dim"><li><a class="hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Complete Home Renovation</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Architectural Kitchens</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Bath suites & Spas</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Historic Restoration</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="services" href="#">Custom Joinery</a></li></ul></div><div><h4 class="font-label-md text-label-md text-secondary-fixed mb-4">Company</h4><ul class="space-y-2.5 font-body-sm text-body-sm text-tertiary-fixed-dim"><li><a class="hover:text-surface-container-lowest transition-colors" data-path="projects" href="#">Portfolio</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="process" href="#">Our Process</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="pricing" href="#">Cost Guides</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="reviews" href="#">Client Journals</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="quote-request" href="#">Consultation</a></li></ul></div><div><h4 class="font-label-md text-label-md text-secondary-fixed mb-4">Contact</h4><ul class="space-y-2.5 font-body-sm text-body-sm text-tertiary-fixed-dim"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">call</span><span>+1 (555) 014-2290</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">mail</span><span>studio@hearthwell.com</span></li><li class="flex items-start gap-2 pt-1"><span class="material-symbols-outlined text-[16px] text-secondary-fixed mt-0.5">schedule</span><span>Mon–Fri 9–6<br/>Sat by appointment</span></li></ul></div></div><div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-tertiary-fixed-dim font-caption text-caption"><p>© 2024 Hearthwell Studio Ltd. All rights reserved.</p><div class="flex items-center gap-6"><a class="hover:text-surface-container-lowest transition-colors" href="#">Privacy Policy</a><a class="hover:text-surface-container-lowest transition-colors" href="#">Terms of Service</a><div class="flex items-center gap-3 ml-2"><a aria-label="Location" class="text-tertiary-fixed-dim hover:text-surface-container-lowest transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">pin_drop</span></a><a aria-label="Photo Gallery" class="text-tertiary-fixed-dim hover:text-surface-container-lowest transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Architectural Notes" class="text-tertiary-fixed-dim hover:text-surface-container-lowest transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">architecture</span></a></div></div></div></div></footer></body></html>

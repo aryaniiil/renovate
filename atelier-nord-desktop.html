@@ -1,0 +1,506 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface": "#fbf9f5", "on-tertiary-container": "#88847b", "primary-container": "#1d1c1a", "inverse-on-surface": "#f2f0ed", "inverse-surface": "#30312e", "error": "#ba1a1a", "on-surface": "#1b1c1a", "on-tertiary-fixed-variant": "#4a463f", "surface-variant": "#e4e2de", "on-primary-container": "#878481", "on-primary-fixed": "#1c1b19", "on-background": "#1b1c1a", "surface-container-high": "#eae8e4", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#cbc6bc", "primary-fixed": "#e6e2de", "error-container": "#ffdad6", "outline-variant": "#cbc6bd", "background": "#fbf9f5", "on-tertiary-fixed": "#1e1b16", "on-error-container": "#93000a", "on-secondary-container": "#72603d", "on-primary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#efeeea", "tertiary": "#010100", "on-secondary-fixed-variant": "#554524", "outline": "#7a776f", "on-secondary-fixed": "#261a01", "inverse-primary": "#cac6c2", "primary-fixed-dim": "#cac6c2", "on-error": "#ffffff", "tertiary-container": "#1e1c16", "on-primary-fixed-variant": "#484644", "secondary": "#6e5c39", "on-surface-variant": "#494740", "surface-container-highest": "#e4e2de", "surface-container-lowest": "#ffffff", "surface-tint": "#605e5b", "surface-dim": "#dbdad6", "secondary-fixed": "#f8dfb3", "secondary-fixed-dim": "#dbc499", "primary": "#010101", "surface-bright": "#fbf9f5", "secondary-container": "#f6ddb0", "tertiary-fixed": "#e8e2d8", "surface-container-low": "#f5f3ef" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xl": "4rem", "gutter": "2rem", "space-md": "1.5rem", "space-lg": "2.5rem", "space-2xl": "8.75rem", "space-sm": "1rem", "space-xs": "0.5rem", "margin": "3.5rem" }, "fontFamily": { "label-sm": [ "Inter" ], "headline-sm": [ "EB Garamond" ], "body-sm": [ "Inter" ], "headline-lg": [ "EB Garamond" ], "body-md": [ "Inter" ], "display": [ "EB Garamond" ], "body-lg": [ "Inter" ], "headline-md": [ "EB Garamond" ], "label-md": [ "Inter" ], "eyebrow": [ "Inter" ], "display-mobile": [ "EB Garamond" ], "headline-lg-mobile": [ "EB Garamond" ] }, "fontSize": { "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "500" } ], "headline-sm": [ "28px", { "lineHeight": "34px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "64px", { "lineHeight": "68px", "letterSpacing": "-0.015em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "display": [ "96px", { "lineHeight": "94px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "body-lg": [ "17px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "headline-md": [ "40px", { "lineHeight": "46px", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "eyebrow": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.14em", "fontWeight": "500" } ], "display-mobile": [ "48px", { "lineHeight": "50px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "headline-lg-mobile": [ "36px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 max-w-[1600px] mx-auto px-6 md:px-margin flex items-center justify-between"><a class="flex items-center gap-2" data-path="home" href="#"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">Atelier Nord</span></a><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-on-surface font-medium"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="work" href="#">Work</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="studio" href="#">Studio</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="journal" href="#">Journal</a></nav><div class="flex items-center gap-space-sm"><a class="inline-flex items-center justify-center rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md px-6 py-3 transition-colors hover:bg-surface-container-high" data-path="begin-a-project" href="#">Begin a project</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="w-full px-5 py-5 bg-surface">
+<div class="relative w-full h-[88vh] rounded-[32px] overflow-hidden bg-primary-container">
+<img alt="Double-height living space with lime plaster walls and sculptural travertine" class="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.92] contrast-[1.04]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjgUAhxtFyzrd2Ys5Zu-eml3b7NhKwIwGYA3Nn8qi_MfP9j1XhhHgIT3Fr2PPtbDW6n2CayA7pCWRpY-i6PhjfNexaDBCgYHLYkmq9ihM8IN-2ruoSImScf-YLazFhZezE4AgcsD5pVik8bzHfTSHgyPKMbOlWJEkthNM0OO-u3S-oRZ0pn5jOdyRkiNk4qCZ6lRtwBDMHoHnwaBSaCcUAWzO3VIKgs4MIxRmnwWc">
+<!-- Subtle Architectural Scrims -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/25 to-primary-container/10"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/40 via-transparent to-transparent"></div>
+<!-- In-hero Sub-nav pill overlay -->
+<div class="absolute top-8 left-8 right-8 flex items-center justify-between pointer-events-auto">
+<div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-primary-container/60 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="font-eyebrow text-eyebrow text-inverse-on-surface uppercase tracking-widest">Now Booking · Spring 2027</span>
+</div>
+<div class="hidden lg:flex items-center gap-6 px-6 py-2.5 rounded-full bg-surface/15 backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-inverse-on-surface/90 uppercase tracking-widest">Selected Works Index 2024–2027</span>
+<span class="text-inverse-on-surface/40">/</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/90">London &amp; Oslo</span>
+</div>
+</div>
+<!-- Hero Bottom Content Grid -->
+<div class="absolute inset-x-0 bottom-0 p-8 md:p-14 lg:p-16 flex flex-col lg:flex-row items-end justify-between gap-10">
+<div class="max-w-3xl">
+<span class="font-eyebrow text-eyebrow text-secondary-fixed uppercase tracking-[0.2em] mb-4 block">Residential Architecture &amp; Renovation</span>
+<h1 class="font-display text-display text-white leading-[0.94] tracking-[-0.03em] max-w-2xl font-normal">
+            Rooms that outlast trends.
+          </h1>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-8 lg:max-w-md w-full justify-between">
+<p class="font-body-lg text-body-lg text-inverse-on-surface/80 leading-relaxed font-normal">
+            Design-led renovation for homes that deserve patience.
+          </p>
+<a aria-label="Scroll to services" class="group flex-shrink-0 w-16 h-16 rounded-full bg-surface/10 hover:bg-surface/25 backdrop-blur-md flex items-center justify-center transition-all duration-300 transform hover:scale-105" href="#services-section">
+<span class="material-symbols-outlined text-inverse-on-surface text-2xl group-hover:translate-y-1 transition-transform">arrow_downward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- INTRO STATEMENT SECTION -->
+<section class="w-full bg-surface-container py-[140px] px-6 md:px-margin">
+<div class="max-w-5xl mx-auto text-center flex flex-col items-center">
+<span class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-[0.2em] mb-6">
+        Studio Philosophy
+      </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-[1.1] tracking-[-0.02em] font-normal">
+        “We renovate fewer homes, so each one is done properly: planned like architecture, built like furniture.”
+      </h2>
+<div class="mt-12 flex items-center gap-4">
+<span class="w-12 h-[1px] bg-secondary/40"></span>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-widest">Oslo · Mayfair</span>
+<span class="w-12 h-[1px] bg-secondary/40"></span>
+</div>
+</div>
+</section>
+<!-- SERVICES EDITORIAL NUMBERED LIST -->
+<section class="w-full bg-surface py-[140px] px-6 md:px-margin" id="services-section">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.2em] mb-3 block">Disciplines</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Spatial Typologies</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          A bespoke approach to residential refurbishment. Every project is conceived as an enduring dialogue between architectural mass and tactile intimacy.
+        </p>
+</div>
+<!-- Interactive Editorial List with Hover Previews -->
+<div class="relative divide-y divide-secondary/25" id="services-container">
+<!-- Row 01 -->
+<div class="group relative py-10 transition-colors duration-300 hover:bg-surface-container/50 px-4 md:px-8 cursor-pointer rounded-2xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuBO2eUKQjEv8L_TQ5hLNTmla-mPYYfSMihd-q4qBk4Iyb45LUyQNv02xw_Usf_vaomoePQKlOQ3wSpcA2iuyZSwyWipo57sv3xkhuiwMJcWB-PykFZ4FKtgkaiw_36RehC2ZeQCw2l6QydvsS6gZb_606WBgiHKcOapvuXzFcCJwnrvTwzEMazBLQVAZZ2MElrNskuQ3CXtsEJcHTQ3sn4Z_8NxCOrS69C982ld6lM" data-title="Kitchens">
+<div class="flex items-baseline gap-8 md:gap-14">
+<span class="font-eyebrow text-eyebrow text-secondary tracking-widest">01</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-secondary transition-colors font-normal">Kitchens</h3>
+</div>
+<div class="lg:text-right max-w-xl">
+<p class="font-body-md text-body-md text-on-surface-variant">Monolithic islands, smoked timber joinery, concealed culinary discipline.</p>
+</div>
+</div>
+<!-- Row 02 -->
+<div class="group relative py-10 transition-colors duration-300 hover:bg-surface-container/50 px-4 md:px-8 cursor-pointer rounded-2xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuCzwZpUfaZIacvp70fKnG0UK_S0Ip-ryH7BKPzZBy9cqcHB8DzlBYXQ0qG5hmNsmQKM9HjHQrUnrPBksRh1fjNsawbNZyxb9ica_5Y_QAb3xobfExK2hNiJBgEo_iWgMGVY2UGd1tLma5H-zFOaPrCHrGt2XzPt9_yeRVPtbHMpedwVVahqnljLSOCqEjGtmhzqsz1BvEkD4MKb6hCQFzOtOTq1Ykr4z9-34PXevd4" data-title="Bathrooms">
+<div class="flex items-baseline gap-8 md:gap-14">
+<span class="font-eyebrow text-eyebrow text-secondary tracking-widest">02</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-secondary transition-colors font-normal">Bathrooms</h3>
+</div>
+<div class="lg:text-right max-w-xl">
+<p class="font-body-md text-body-md text-on-surface-variant">Honed natural stone, lime plaster sanctuaries, bespoke unlacquered metalwork.</p>
+</div>
+</div>
+<!-- Row 03 -->
+<div class="group relative py-10 transition-colors duration-300 hover:bg-surface-container/50 px-4 md:px-8 cursor-pointer rounded-2xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuCjgUAhxtFyzrd2Ys5Zu-eml3b7NhKwIwGYA3Nn8qi_MfP9j1XhhHgIT3Fr2PPtbDW6n2CayA7pCWRpY-i6PhjfNexaDBCgYHLYkmq9ihM8IN-2ruoSImScf-YLazFhZezE4AgcsD5pVik8bzHfTSHgyPKMbOlWJEkthNM0OO-u3S-oRZ0pn5jOdyRkiNk4qCZ6lRtwBDMHoHnwaBSaCcUAWzO3VIKgs4MIxRmnwWc" data-title="Living Spaces">
+<div class="flex items-baseline gap-8 md:gap-14">
+<span class="font-eyebrow text-eyebrow text-secondary tracking-widest">03</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-secondary transition-colors font-normal">Living Spaces</h3>
+</div>
+<div class="lg:text-right max-w-xl">
+<p class="font-body-md text-body-md text-on-surface-variant">Double-height proportion, balanced light studies, architectural upholstery.</p>
+</div>
+</div>
+<!-- Row 04 -->
+<div class="group relative py-10 transition-colors duration-300 hover:bg-surface-container/50 px-4 md:px-8 cursor-pointer rounded-2xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuBl01n7ajXx3742Z9RC1zkfSnkowYEWvcv-oKLNg_MmMNSyMv_B0VmItw8IUDwG1CsdJ0lcle9AW2PmBJlV4e2S-2WtlktqjjSSpJu06xfCu-vxv5JhdXMCYFRKLPV2u4RTSny5GPppg2XhcKt2nLroVFIeD820a0Ir7zXEWZn2FcyxtzmrhLlbrXKmn6ErdQAm9byO2uCk4bSxkjFD1kfI6KyuY1OUJVZ2IzZjb68" data-title="Full Homes">
+<div class="flex items-baseline gap-8 md:gap-14">
+<span class="font-eyebrow text-eyebrow text-secondary tracking-widest">04</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-secondary transition-colors font-normal">Full Homes</h3>
+</div>
+<div class="lg:text-right max-w-xl">
+<p class="font-body-md text-body-md text-on-surface-variant">Complete structural reimagining from foundation envelope to bespoke finishes.</p>
+</div>
+</div>
+<!-- Row 05 -->
+<div class="group relative py-10 transition-colors duration-300 hover:bg-surface-container/50 px-4 md:px-8 cursor-pointer rounded-2xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuBn1lniILmsyiE_Dpdu9IPF1StS1w_CqUG_klT1xX_YVwKGDCzJCheby78FgGrNKRW6CaU3ay936bnXG9VZMHNvJw4-1ObR4qHEWwykuH5NQL0UMpTT1WpKcl6srncEybkeqFCFUev6DNsmrpJJOUYbvrFoiIQN0YiwBCe55Kj3AXSaPP8OgMMKKCH5Sy7Ev-40gbPQOdUR_fq6CoWfiGri_ezDMeZ7c3pDjRhcaQg" data-title="Outdoor Rooms">
+<div class="flex items-baseline gap-8 md:gap-14">
+<span class="font-eyebrow text-eyebrow text-secondary tracking-widest">05</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-secondary transition-colors font-normal">Outdoor Rooms</h3>
+</div>
+<div class="lg:text-right max-w-xl">
+<p class="font-body-md text-body-md text-on-surface-variant">Seamless pavilion transitions, Japanese courtyard gravels, sheltered fire.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SELECTED WORK HORIZONTAL SHOWCASE -->
+<section class="w-full bg-surface-container py-[140px] px-6 md:px-margin overflow-hidden">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.2em] mb-2 block">Portfolio</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Selected Work</h2>
+</div>
+<div class="flex items-center gap-4">
+<button aria-label="Previous Project" class="w-12 h-12 rounded-full bg-surface hover:bg-surface-container-high transition-colors flex items-center justify-center text-on-surface shadow-sm" id="gallery-prev">
+<span class="material-symbols-outlined text-xl">west</span>
+</button>
+<button aria-label="Next Project" class="w-12 h-12 rounded-full bg-surface hover:bg-surface-container-high transition-colors flex items-center justify-center text-on-surface shadow-sm" id="gallery-next">
+<span class="material-symbols-outlined text-xl">east</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Cards Container -->
+<div class="flex gap-8 overflow-x-auto pb-8 scrollbar-none snap-x snap-mandatory" id="gallery-track">
+<!-- Card 1 -->
+<article class="min-w-[340px] md:min-w-[420px] lg:min-w-[480px] flex-shrink-0 snap-start flex flex-col group">
+<div class="relative aspect-[3/4] w-full rounded-[28px] overflow-hidden bg-surface-variant mb-6 shadow-md">
+<img alt="The Kensington Residence bespoke kitchen in smoked oak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO2eUKQjEv8L_TQ5hLNTmla-mPYYfSMihd-q4qBk4Iyb45LUyQNv02xw_Usf_vaomoePQKlOQ3wSpcA2iuyZSwyWipo57sv3xkhuiwMJcWB-PykFZ4FKtgkaiw_36RehC2ZeQCw2l6QydvsS6gZb_606WBgiHKcOapvuXzFcCJwnrvTwzEMazBLQVAZZ2MElrNskuQ3CXtsEJcHTQ3sn4Z_8NxCOrS69C982ld6lM">
+<div class="absolute top-6 left-6 px-3.5 py-1.5 rounded-full bg-primary-container/80 backdrop-blur-sm">
+<span class="font-eyebrow text-eyebrow text-inverse-on-surface uppercase tracking-widest">London, W8</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">The Kensington Residence</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2026</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Smoked Oak &amp; Calacatta Viola</p>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="min-w-[340px] md:min-w-[420px] lg:min-w-[480px] flex-shrink-0 snap-start flex flex-col group">
+<div class="relative aspect-[3/4] w-full rounded-[28px] overflow-hidden bg-surface-variant mb-6 shadow-md">
+<img alt="Pavilion at Highgate carved travertine spa sanctuary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzwZpUfaZIacvp70fKnG0UK_S0Ip-ryH7BKPzZBy9cqcHB8DzlBYXQ0qG5hmNsmQKM9HjHQrUnrPBksRh1fjNsawbNZyxb9ica_5Y_QAb3xobfExK2hNiJBgEo_iWgMGVY2UGd1tLma5H-zFOaPrCHrGt2XzPt9_yeRVPtbHMpedwVVahqnljLSOCqEjGtmhzqsz1BvEkD4MKb6hCQFzOtOTq1Ykr4z9-34PXevd4">
+<div class="absolute top-6 left-6 px-3.5 py-1.5 rounded-full bg-primary-container/80 backdrop-blur-sm">
+<span class="font-eyebrow text-eyebrow text-inverse-on-surface uppercase tracking-widest">London, N6</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Pavilion at Highgate</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2025</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carved Travertine &amp; Lime Plaster</p>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="min-w-[340px] md:min-w-[420px] lg:min-w-[480px] flex-shrink-0 snap-start flex flex-col group">
+<div class="relative aspect-[3/4] w-full rounded-[28px] overflow-hidden bg-surface-variant mb-6 shadow-md">
+<img alt="Cotswolds Barn conversion dining hall with linen drapes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl01n7ajXx3742Z9RC1zkfSnkowYEWvcv-oKLNg_MmMNSyMv_B0VmItw8IUDwG1CsdJ0lcle9AW2PmBJlV4e2S-2WtlktqjjSSpJu06xfCu-vxv5JhdXMCYFRKLPV2u4RTSny5GPppg2XhcKt2nLroVFIeD820a0Ir7zXEWZn2FcyxtzmrhLlbrXKmn6ErdQAm9byO2uCk4bSxkjFD1kfI6KyuY1OUJVZ2IzZjb68">
+<div class="absolute top-6 left-6 px-3.5 py-1.5 rounded-full bg-primary-container/80 backdrop-blur-sm">
+<span class="font-eyebrow text-eyebrow text-inverse-on-surface uppercase tracking-widest">Gloucestershire</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Cotswolds Barn Conversion</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2026</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reclaimed Beamwork &amp; Honed Limestone</p>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="min-w-[340px] md:min-w-[420px] lg:min-w-[480px] flex-shrink-0 snap-start flex flex-col group">
+<div class="relative aspect-[3/4] w-full rounded-[28px] overflow-hidden bg-surface-variant mb-6 shadow-md">
+<img alt="Kyoto Courtyard Villa indoor-outdoor pavilion garden" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn1lniILmsyiE_Dpdu9IPF1StS1w_CqUG_klT1xX_YVwKGDCzJCheby78FgGrNKRW6CaU3ay936bnXG9VZMHNvJw4-1ObR4qHEWwykuH5NQL0UMpTT1WpKcl6srncEybkeqFCFUev6DNsmrpJJOUYbvrFoiIQN0YiwBCe55Kj3AXSaPP8OgMMKKCH5Sy7Ev-40gbPQOdUR_fq6CoWfiGri_ezDMeZ7c3pDjRhcaQg">
+<div class="absolute top-6 left-6 px-3.5 py-1.5 rounded-full bg-primary-container/80 backdrop-blur-sm">
+<span class="font-eyebrow text-eyebrow text-inverse-on-surface uppercase tracking-widest">Nordmarka</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">Nordmarka Forest Villa</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2025</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cedar Lattice &amp; Black Timber Pavilion</p>
+</div>
+</article>
+</div>
+<!-- Minimal Progress Bar -->
+<div class="w-full bg-surface-dim h-[2px] mt-8 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-1/4 transition-all duration-300" id="gallery-progress"></div>
+</div>
+</div>
+</section>
+<!-- THE ATELIER METHOD (CHARCOAL #1D1C1A) -->
+<section class="relative w-full bg-primary-container py-[140px] px-6 md:px-margin overflow-hidden text-inverse-on-surface">
+<!-- Subtle Lime Plaster Texture Background Overlay -->
+<div class="absolute inset-0 opacity-10 mix-blend-screen pointer-events-none">
+<img alt="Lime Plaster texture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP4JfNppZ69sc1vKCatASGizPpmwY8z6lRq_unbp7SSmmx6O-FB_sDV2366GXSPKV0s1T9eRTe4gGW7ISpJw6S7guPFmOvA7NHw-md8J8BoQLRn9Lbrzs_E-sLI7mZjd8k4kAgkfCNo0C_DJcFJXymHgv3f83ZmA0xFafO1JBcouJvB7IniQYQ-SAfxA86hREZ060pTH6w6_jc0aV4rJgB5LAaKBC09QqbmyXd6So">
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+<!-- Left Column: Sticky Narrative -->
+<div class="lg:col-span-5 lg:sticky lg:top-32 self-start">
+<span class="font-eyebrow text-eyebrow text-secondary-fixed uppercase tracking-[0.2em] mb-4 block">Rigor &amp; Craft</span>
+<h2 class="font-headline-lg text-headline-lg text-inverse-on-surface leading-[1.05] tracking-[-0.02em] font-normal mb-8">
+          The Atelier Method
+        </h2>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/70 leading-relaxed max-w-md">
+          A disciplined, linear sequence that bridges structural engineering with museum-grade craftsmanship. Each milestone is defined by sensory clarity and permanence.
+        </p>
+<!-- Metric Accent -->
+<div class="mt-14 pt-10 grid grid-cols-2 gap-8 border-t border-secondary/20">
+<div>
+<span class="font-display text-headline-lg text-secondary-fixed block leading-none mb-2">4</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-inverse-on-surface/60">Annual Commissions</span>
+</div>
+<div>
+<span class="font-display text-headline-lg text-secondary-fixed block leading-none mb-2">100%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-inverse-on-surface/60">Site Presence</span>
+</div>
+</div>
+</div>
+<!-- Right Column: 4 Stages -->
+<div class="lg:col-span-7 flex flex-col space-y-12">
+<!-- Stage 01 -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface-container-highest/5 hover:bg-surface-container-highest/10 transition-colors border border-secondary/20">
+<div class="flex items-center justify-between mb-4">
+<span class="font-eyebrow text-eyebrow text-secondary-fixed tracking-widest">Phase 01</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/50">4–6 Weeks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-inverse-on-surface mb-3">Discover</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/75 leading-relaxed">
+            Immersion into site orientation, family rhythm, and architectural heritage. We trace light studies and analyze structural boundaries before drawing a single line.
+          </p>
+</div>
+<!-- Stage 02 -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface-container-highest/5 hover:bg-surface-container-highest/10 transition-colors border border-secondary/20">
+<div class="flex items-center justify-between mb-4">
+<span class="font-eyebrow text-eyebrow text-secondary-fixed tracking-widest">Phase 02</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/50">8–12 Weeks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-inverse-on-surface mb-3">Compose</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/75 leading-relaxed">
+            Material palette curation, physical 1:1 scale prototypes, and detailed illumination choreography. Full joinery sets and MEP integration plans resolved down to 1mm tolerances.
+          </p>
+</div>
+<!-- Stage 03 -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface-container-highest/5 hover:bg-surface-container-highest/10 transition-colors border border-secondary/20">
+<div class="flex items-center justify-between mb-4">
+<span class="font-eyebrow text-eyebrow text-secondary-fixed tracking-widest">Phase 03</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/50">6–14 Months</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-inverse-on-surface mb-3">Build</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/75 leading-relaxed">
+            Master guild joinery, monolithic stonemasonry, and in-house site direction. Daily architectural oversight guarantees that structural honesty is preserved at every junction.
+          </p>
+</div>
+<!-- Stage 04 -->
+<div class="p-8 md:p-10 rounded-2xl bg-surface-container-highest/5 hover:bg-surface-container-highest/10 transition-colors border border-secondary/20">
+<div class="flex items-center justify-between mb-4">
+<span class="font-eyebrow text-eyebrow text-secondary-fixed tracking-widest">Phase 04</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/50">Indefinite</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-inverse-on-surface mb-3">Hand Over</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/75 leading-relaxed">
+            Formal commissioning, tactile care manual, and seasonal architectural audits. We remain custodians of your property as timber patinas and stonework settles.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- MATERIALS LIBRARY (WARM WHITE #FAF8F4) -->
+<section class="w-full bg-surface py-[140px] px-6 md:px-margin">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.2em] mb-3 block">Tactile Palette</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Honest, enduring materials.</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Surfaces chosen for how they age, not just how they photograph on handover day. Organic patinas that enrich daily life.
+        </p>
+</div>
+<!-- 4 Macro Tiles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Tile 1 -->
+<div class="group flex flex-col p-6 rounded-[24px] bg-surface-container transition-all duration-300 hover:shadow-lg">
+<div class="aspect-square w-full rounded-2xl overflow-hidden mb-6 bg-surface-variant">
+<img alt="Smoked oak architectural material swatch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANdO5IORCEmRf7If6hO9DkZUPK5EK216au_XM3jEGjdPGSEBZqM02XNK6RlcQMbw0H8_hBy20qS8nlNXJrVqjlD_eMJQ1eQxjQm3sRve9pP4i4iUXwQA7DImwL6fsP96tiHeyr1iVN6501H61TCG1qDhamaPKF5jSwnLy6izLDJgalDfPwm2n9vwLkgw7CvkAjTCMMFQowMmNLTli7SguBUozuGfuDNTWEcGDbS3A">
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-normal">Smoked Oak</h3>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase">Timber</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Fumed European oak with natural open grain and matte oil finish.
+          </p>
+</div>
+<!-- Tile 2 -->
+<div class="group flex flex-col p-6 rounded-[24px] bg-surface-container transition-all duration-300 hover:shadow-lg">
+<div class="aspect-square w-full rounded-2xl overflow-hidden mb-6 bg-surface-variant">
+<img alt="Creamy travertine stone slab swatch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeys9DS85xtYGGtTJZL9OSR7-6t-P9Klsf5O3fvMqoWeAZHjDVwqlFMJtsXRO_Ih0ZOoWsgEx5LBZPJY1AJV9hbACWc18EeeXNKqfvSOUO_AEhMy1XTG9vwroHGqwT52kJDDp7DMM0Z1ykRr_XWJHpwScDFe7NJMdv3Wg_kV2t5_L92eI7J2TJPv5gKIjBCJSPnszsGgddlHDkdc9Aa6oB6xGphMNquSv3GtBaeJ4">
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-normal">Travertine</h3>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase">Stone</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Honed Navona travertine with organic vein fill and softened edges.
+          </p>
+</div>
+<!-- Tile 3 -->
+<div class="group flex flex-col p-6 rounded-[24px] bg-surface-container transition-all duration-300 hover:shadow-lg">
+<div class="aspect-square w-full rounded-2xl overflow-hidden mb-6 bg-surface-variant">
+<img alt="Brushed architectural brass swatch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCplllBPz4htRtNzEZA9SsQy0DVFFNeGyvSzrL976lqqy4Jm7ijb_SGcqth8PLiNEtEp13BBFMpu15_ioOboIuQoMBF6IX1Oggof9gHOovxvYerBQuPKVesSN_cg4fWASLXlqJL3ZQlhWme1Cn6bBoMdIkDuAblxYN43Z8WiOz61HkKuaSPWnIGrxzUlA7pR61kmBT4C-3XY-VY-H97Dn7Q80upOyBnImvVQp9zvyE">
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-normal">Brushed Brass</h3>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase">Metal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Unlacquered solid architectural brass that patinas gracefully over time.
+          </p>
+</div>
+<!-- Tile 4 -->
+<div class="group flex flex-col p-6 rounded-[24px] bg-surface-container transition-all duration-300 hover:shadow-lg">
+<div class="aspect-square w-full rounded-2xl overflow-hidden mb-6 bg-surface-variant">
+<img alt="Warm ivory lime plaster wall swatch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP4JfNppZ69sc1vKCatASGizPpmwY8z6lRq_unbp7SSmmx6O-FB_sDV2366GXSPKV0s1T9eRTe4gGW7ISpJw6S7guPFmOvA7NHw-md8J8BoQLRn9Lbrzs_E-sLI7mZjd8k4kAgkfCNo0C_DJcFJXymHgv3f83ZmA0xFafO1JBcouJvB7IniQYQ-SAfxA86hREZ060pTH6w6_jc0aV4rJgB5LAaKBC09QqbmyXd6So">
+</div>
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-normal">Lime Plaster</h3>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase">Finish</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Artisanal slaked lime and marble dust applied with raking trowels.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- PRESS & TESTIMONIAL (BONE #EFEBE4) -->
+<section class="w-full bg-surface-container py-[140px] px-6 md:px-margin">
+<div class="max-w-4xl mx-auto flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 select-none opacity-60">format_quote</span>
+<blockquote class="font-headline-md text-headline-md text-on-surface leading-[1.2] font-normal mb-8">
+        “Atelier Nord delivered a home that feels neither modern nor historic—simply inevitable. The silence in the spaces is tangible.”
+      </blockquote>
+<!-- Attribution -->
+<div class="flex flex-col items-center mb-16">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center font-display text-on-surface mb-3 border border-secondary/30">
+          C
+        </div>
+<cite class="font-label-md text-label-md not-italic text-on-surface uppercase tracking-wider">Lord &amp; Lady Cavendish</cite>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Belgravia Residence, London</span>
+</div>
+<!-- Fictional Architectural Publications -->
+<div class="w-full pt-12 border-t border-secondary/25 grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-65">
+<span class="font-eyebrow text-eyebrow tracking-[0.25em] text-on-surface font-semibold">ARCHITECTURAL DIGEST</span>
+<span class="font-eyebrow text-eyebrow tracking-[0.25em] text-on-surface font-semibold">WORLD OF INTERIORS</span>
+<span class="font-eyebrow text-eyebrow tracking-[0.25em] text-on-surface font-semibold">ELLE DECORATION</span>
+<span class="font-eyebrow text-eyebrow tracking-[0.25em] text-on-surface font-semibold">WALLPAPER*</span>
+</div>
+</div>
+</section>
+<!-- CONTACT & ENGAGEMENT SECTION (WARM WHITE #FAF8F4) -->
+<section class="w-full bg-surface py-[140px] px-6 md:px-margin" id="contact-section">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
+<!-- Left Column -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="font-eyebrow text-eyebrow text-secondary uppercase tracking-[0.2em] mb-4 block">Begin Consultation</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-[1.05] tracking-[-0.02em] font-normal mb-8">
+            Tell us about your home.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-10">
+            We accept four comprehensive renovation engagements each calendar year. Please provide initial context regarding scope, location, and structural ambitions.
+          </p>
+</div>
+<div class="space-y-6 pt-8 border-t border-secondary/25">
+<div>
+<span class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest block mb-1">Direct Inquiries</span>
+<a class="font-body-lg text-body-lg text-on-surface hover:text-secondary transition-colors" href="mailto:studio@ateliernord.com">studio@ateliernord.com</a>
+</div>
+<div>
+<span class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest block mb-1">Oslo Studio</span>
+<p class="font-body-md text-body-md text-on-surface">St. Olavs Plass 4, Suite 06, 0165 Oslo</p>
+</div>
+<div>
+<span class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest block mb-1">London Office</span>
+<p class="font-body-md text-body-md text-on-surface">14 Grosvenor Gardens, Belgravia, SW1W 0DH</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Form -->
+<div class="lg:col-span-7 bg-surface-container p-8 sm:p-12 md:p-14 rounded-[32px] shadow-sm">
+<form class="flex flex-col gap-10" onsubmit="event.preventDefault(); alert('Thank you. Atelier Nord will review your project dossier shortly.');">
+<!-- Text Inputs -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col">
+<label class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest mb-2" for="client-name">Your Name</label>
+<input class="bg-transparent border-b border-secondary/40 focus:border-on-surface py-3 font-body-lg text-on-surface placeholder:text-on-surface-variant/40 outline-none transition-colors" id="client-name" placeholder="Eleanor Vance" required="" type="text">
+</div>
+<div class="flex flex-col">
+<label class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest mb-2" for="client-email">Email Address</label>
+<input class="bg-transparent border-b border-secondary/40 focus:border-on-surface py-3 font-body-lg text-on-surface placeholder:text-on-surface-variant/40 outline-none transition-colors" id="client-email" placeholder="eleanor@domain.com" required="" type="email">
+</div>
+</div>
+<div class="flex flex-col">
+<label class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest mb-2" for="property-loc">Location &amp; Property Type</label>
+<input class="bg-transparent border-b border-secondary/40 focus:border-on-surface py-3 font-body-lg text-on-surface placeholder:text-on-surface-variant/40 outline-none transition-colors" id="property-loc" placeholder="e.g. Victorian Villa, Kensington or Fjord House, Oslo" required="" type="text">
+</div>
+<!-- Project Scope Chips -->
+<div class="flex flex-col">
+<span class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest mb-3">Project Scope</span>
+<div class="flex flex-wrap gap-2.5" id="scope-chips">
+<button class="scope-btn px-5 py-2.5 rounded-full text-label-md font-label-md bg-surface text-on-surface hover:bg-secondary/15 transition-colors border border-secondary/30 focus:bg-primary-container focus:text-inverse-on-surface" type="button">Full Home</button>
+<button class="scope-btn px-5 py-2.5 rounded-full text-label-md font-label-md bg-surface text-on-surface hover:bg-secondary/15 transition-colors border border-secondary/30 focus:bg-primary-container focus:text-inverse-on-surface" type="button">Kitchen Suite</button>
+<button class="scope-btn px-5 py-2.5 rounded-full text-label-md font-label-md bg-surface text-on-surface hover:bg-secondary/15 transition-colors border border-secondary/30 focus:bg-primary-container focus:text-inverse-on-surface" type="button">Bathroom Sanctuary</button>
+<button class="scope-btn px-5 py-2.5 rounded-full text-label-md font-label-md bg-surface text-on-surface hover:bg-secondary/15 transition-colors border border-secondary/30 focus:bg-primary-container focus:text-inverse-on-surface" type="button">Architectural Extension</button>
+</div>
+</div>
+<!-- Budget Range Chips -->
+<div class="flex flex-col">
+<span class="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest mb-3">Expected Budget Range</span>
+<div class="flex flex-wrap gap-2.5" id="budget-chips">
+<button class="budget-btn px-5 py-2.5 rounded-full text-label-md font-label-md bg-surface text-on-surface hover:bg-secondary/15 transition-colors border border-secondary/30 focus:bg-primary-container focus:text-inverse-on-surface" type="button">£250k – £500k</button>
+<button class="budget-btn px-5 py-2.5 rounded-full text-label-md font-label-md bg-surface text-on-surface hover:bg-secondary/15 transition-colors border border-secondary/30 focus:bg-primary-container focus:text-inverse-on-surface" type="button">£500k – £1M</button>
+<button class="budget-btn px-5 py-2.5 rounded-full text-label-md font-label-md bg-surface text-on-surface hover:bg-secondary/15 transition-colors border border-secondary/30 focus:bg-primary-container focus:text-inverse-on-surface" type="button">£1M+</button>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="pt-4 flex items-center justify-between">
+<p class="font-body-sm text-body-sm text-on-surface-variant/70 max-w-xs">Strict confidentiality honored on all client communications.</p>
+<button class="inline-flex items-center gap-3 px-9 py-4 rounded-full bg-primary-container text-inverse-on-surface font-label-md text-label-md hover:bg-on-surface transition-all transform hover:scale-[1.02]" type="submit">
+<span>Send enquiry</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Interactive Scripts for Gallery, Hover Previews, and Form Chips -->
+<script>
+    // Horizontal Gallery Navigation & Scroll Progress
+    const track = document.getElementById('gallery-track');
+    const progressBar = document.getElementById('gallery-progress');
+    const prevBtn = document.getElementById('gallery-prev');
+    const nextBtn = document.getElementById('gallery-next');
+
+    if (track && progressBar) {
+      track.addEventListener('scroll', () => {
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        if (maxScroll > 0) {
+          const ratio = track.scrollLeft / maxScroll;
+          progressBar.style.width = Math.max(25, ratio * 100) + '%';
+        }
+      });
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          track.scrollBy({ left: -440, behavior: 'smooth' });
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          track.scrollBy({ left: 440, behavior: 'smooth' });
+        });
+      }
+    }
+
+    // Toggle Chip states
+    document.querySelectorAll('.scope-btn, .budget-btn').forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const siblings = button.parentElement.querySelectorAll('button');
+        siblings.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-inverse-on-surface');
+          b.classList.add('bg-surface', 'text-on-surface');
+        });
+        button.classList.remove('bg-surface', 'text-on-surface');
+        button.classList.add('bg-primary-container', 'text-inverse-on-surface');
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-primary-container text-inverse-on-surface overflow-hidden"><div class="max-w-[1600px] mx-auto px-6 md:px-margin pt-space-2xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-2xl"><div class="md:col-span-5 flex flex-col justify-between"><div class="max-w-md"><span class="font-eyebrow text-eyebrow uppercase tracking-widest text-on-primary-container block mb-space-sm">Bespoke Residential Architecture</span><p class="font-body-lg text-body-lg text-inverse-on-surface/80">Composing spaces of quiet permanence, tactile richness, and natural light across high-altitude and coastal residences.</p></div><div class="mt-space-lg"><span class="font-eyebrow text-eyebrow uppercase text-on-primary-container block mb-space-xs">Studio Address</span><address class="not-italic font-body-sm text-body-sm text-inverse-on-surface/70 leading-relaxed">St. Olavs Plass 4, Suite 06<br>0165 Oslo, Norway<br>studio@ateliernord.com</address></div></div><div class="md:col-span-3 md:col-start-7"><span class="font-eyebrow text-eyebrow uppercase text-on-primary-container block mb-space-md">Index</span><ul class="space-y-space-xs font-body-md text-body-md"><li class="list-none"><a class="text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors" data-path="work" href="#">Selected Work</a></li><li class="list-none"><a class="text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors" data-path="studio" href="#">Studio Philosophy</a></li><li class="list-none"><a class="text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors" data-path="services" href="#">Architectural Services</a></li><li class="list-none"><a class="text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors" data-path="journal" href="#">Editorial Journal</a></li><li class="list-none"><a class="text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors" data-path="begin-a-project" href="#">Project Inquiry</a></li></ul></div><div class="md:col-span-3"><span class="font-eyebrow text-eyebrow uppercase text-on-primary-container block mb-space-md">Network</span><ul class="space-y-space-xs font-body-md text-body-md"><li class="list-none"><a class="text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors" href="#">Instagram Archive</a></li><li class="list-none"><a class="text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors" href="#">Monograph Releases</a></li><li class="list-none"><a class="text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors" href="#">RIBA Architectural Register</a></li><li class="list-none"><a class="text-inverse-on-surface/80 hover:text-inverse-on-surface transition-colors" href="#">Press &amp; Publications</a></li></ul></div></div><div class="relative select-none pointer-events-none py-space-md overflow-hidden"><div class="font-display text-[15vw] leading-none tracking-tight text-surface-container-lowest/15 text-center whitespace-nowrap">Atelier Nord</div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between text-on-primary-container font-label-sm text-label-sm gap-space-xs"><p>© 2025 Atelier Nord Architects. All rights reserved.</p><div class="flex gap-space-md"><a class="hover:text-inverse-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-inverse-on-surface transition-colors" href="#">Terms of Engagement</a><a class="hover:text-inverse-on-surface transition-colors" href="#">Site Credits</a></div></div></div></footer></body></html>

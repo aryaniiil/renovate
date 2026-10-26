@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Hanken+Grotesk:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error-container": "#93000a", "primary-fixed-dim": "#feb3b8", "surface-tint": "#884d53", "on-secondary-fixed": "#2b1700", "error": "#ba1a1a", "secondary": "#7a582f", "on-secondary": "#ffffff", "primary-fixed": "#ffdadb", "surface-container-lowest": "#ffffff", "on-surface-variant": "#524344", "tertiary": "#1c150f", "primary-container": "#4a1b21", "on-tertiary-container": "#9c8f87", "surface-container-low": "#f9f3e9", "on-secondary-container": "#79562e", "tertiary-container": "#322922", "on-primary": "#ffffff", "tertiary-fixed": "#efe0d6", "background": "#fff9ee", "on-secondary-fixed-variant": "#60401a", "inverse-primary": "#feb3b8", "secondary-container": "#fecf9c", "on-primary-fixed": "#370c13", "primary": "#30070e", "surface-bright": "#fff9ee", "surface": "#fff9ee", "on-primary-fixed-variant": "#6d373c", "outline-variant": "#d7c2c2", "on-tertiary-fixed": "#221a14", "secondary-fixed-dim": "#ecbe8d", "inverse-surface": "#33302a", "secondary-fixed": "#ffddba", "surface-variant": "#e8e2d8", "error-container": "#ffdad6", "surface-container-high": "#ede7dd", "on-surface": "#1d1b15", "on-background": "#1d1b15", "on-tertiary": "#ffffff", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#4f453e", "surface-container": "#f3ede3", "outline": "#847374", "surface-container-highest": "#e8e2d8", "surface-dim": "#dfd9cf", "inverse-on-surface": "#f6f0e6", "tertiary-fixed-dim": "#d3c4ba", "on-primary-container": "#c37f85" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xs": "0.5rem", "space-md": "1.5rem", "gutter-mobile": "1rem", "space-lg": "2.5rem", "space-xl": "4rem", "space-sm": "1rem", "gutter": "2rem", "section-gap": "8.75rem", "margin-mobile": "1.5rem", "margin": "4rem" }, "fontFamily": { "label-md": ["Hanken Grotesk"], "display-mobile": ["EB Garamond"], "display": ["EB Garamond"], "body-md": ["Hanken Grotesk"], "eyebrow": ["Hanken Grotesk"], "headline-lg-mobile": ["EB Garamond"], "body-lg": ["Hanken Grotesk"], "headline-md": ["EB Garamond"], "headline-sm": ["EB Garamond"], "headline-lg": ["EB Garamond"], "label-sm": ["Hanken Grotesk"] }, "fontSize": { "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.04em", "fontWeight": "500" }], "display-mobile": ["2.75rem", { "lineHeight": "1.15", "letterSpacing": "-0.015em", "fontWeight": "400" }], "display": ["4.5rem", { "lineHeight": "1.08", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "eyebrow": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.16em", "fontWeight": "500" }], "headline-lg-mobile": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-lg": ["1.0625rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "headline-md": ["2.25rem", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-sm": ["1.625rem", { "lineHeight": "1.3", "fontWeight": "400" }], "headline-lg": ["3.25rem", { "lineHeight": "1.12", "letterSpacing": "-0.015em", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.08em", "fontWeight": "500" }] } } } }</script></head><body class="bg-surface text-on-surface antialiased"><header class="fixed top-5 inset-x-0 z-50 px-gutter-mobile md:px-gutter max-w-[1440px] mx-auto pointer-events-none"><div class="pointer-events-auto h-16 w-full rounded-full bg-surface-container-low/85 backdrop-blur-xl shadow-[0_12px_36px_-8px_rgba(35,27,24,0.06),0_4px_12px_-2px_rgba(35,27,24,0.03)] flex items-center justify-between px-space-md border border-secondary/15"><div class="flex items-center gap-space-xs"><div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center"><span class="font-headline-sm text-surface-container-lowest text-[12px] leading-none select-none">O</span></div><span class="font-headline-sm text-headline-sm text-tertiary tracking-tight">Maison Orrin</span></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-secondary/15 text-primary font-label-md text-label-md rounded-full"><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary py-1 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-secondary after:opacity-0 hover:after:opacity-100 after:transition-opacity" data-path="residences" href="#">Residences</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary py-1 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-secondary after:opacity-0 hover:after:opacity-100 after:transition-opacity" data-path="craft" href="#">Craft</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary py-1 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-secondary after:opacity-0 hover:after:opacity-100 after:transition-opacity" data-path="approach" href="#">Approach</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary py-1 transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-secondary after:opacity-0 hover:after:opacity-100 after:transition-opacity" data-path="journal" href="#">Journal</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-block font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" data-path="appointment" href="#">By appointment</a><a class="px-space-md py-2.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all duration-300 shadow-[0_4px_16px_rgba(74,27,33,0.15)]" data-path="inquiry" href="#">Request an introduction</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="px-5 w-full max-w-[1440px] mx-auto">
+<div class="w-full h-[92vh] rounded-[36px] overflow-hidden relative shadow-xl shadow-tertiary/10 bg-tertiary">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 ease-out hover:scale-105" data-alt="Editorial architectural photography of a tranquil, warm minimalist dining room with textured lime plaster walls, arched window, walnut dining table, brass wall sconces emitting soft amber light, and an integrated fireplace, quiet luxury, high resolution, no people" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA20ucSvdhiMzPdBGFt8iEyIxd53yfe_ZIf1p4bWcIHnJ20o_zBeUilSUdEd885Oxf3GLe9aYFQg5wX9jqH148c2By5O0qe4Jgn150vZi3ZoQR5CfP5Mpz1eISBzbAME8aXVxmmAnAApwRvcvUHjdXU9A9T7X_TJanwxKgGuyzW6hqyDpmE2wmHZ6nyL3rjdEr15DGUkIKMUfF9zBKeAZSJL32Dc4Y2xODn8u2whcY');"></div>
+<!-- Dual Scrim for legibility and atmospheric depth -->
+<div class="absolute inset-0 bg-gradient-to-t from-tertiary/85 via-tertiary/30 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-tertiary/50 via-transparent to-transparent"></div>
+<!-- Hero Content Anchors -->
+<div class="absolute inset-0 p-8 md:p-14 flex flex-col justify-end">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+<!-- Bottom Left: Brand Statement -->
+<div class="max-w-3xl">
+<span class="inline-flex items-center gap-2 font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] mb-4 bg-tertiary/40 backdrop-blur-md px-3.5 py-1.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Private Residential Renovation
+            </span>
+<h1 class="font-display text-display text-surface-container-lowest leading-[1.0] drop-shadow-sm">
+              Homes made <em class="italic font-normal text-surface-container-low">quietly</em> extraordinary.
+            </h1>
+</div>
+<!-- Bottom Right: Discretion Quota Pill -->
+<div class="shrink-0 mb-2">
+<div class="backdrop-blur-xl bg-surface-container-lowest/15 rounded-full px-7 py-4 flex items-center gap-5 text-surface-container-lowest shadow-[0_12px_36px_-8px_rgba(0,0,0,0.3)] hover:bg-surface-container-lowest/20 transition-all duration-300 group cursor-pointer">
+<div class="flex flex-col">
+<span class="font-eyebrow text-eyebrow uppercase tracking-[0.16em] text-secondary-fixed">Private Allocation</span>
+<span class="font-body-md text-body-md text-surface-container-lowest font-medium">Accepting 4 residences for 2027</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary/80 flex items-center justify-center text-surface-container-lowest group-hover:bg-secondary group-hover:scale-105 transition-all">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:translate-x-0.5">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. PHILOSOPHY SECTION -->
+<section class="mt-section-gap px-gutter-mobile md:px-gutter max-w-[1440px] mx-auto w-full">
+<div class="max-w-3xl mx-auto text-center flex flex-col items-center">
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] mb-6">The House</span>
+<p class="font-headline-lg text-headline-lg text-tertiary leading-[1.25]">
+        We take on a handful of homes each year, so every drawing, joint, and finish receives the attention it <em class="italic font-normal text-secondary">deserves</em>.
+      </p>
+<!-- Bronze Hairline Divider via opacity token -->
+<div class="w-full h-px bg-secondary/35 my-12"></div>
+<!-- Stats Bar -->
+<div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-secondary">12</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Residences a year</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-secondary">2011</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Atelier founded</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-secondary">1 : 1</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Single point of contact</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. STICKY SPLIT STORYTELLING 'RESIDENCES' -->
+<section class="mt-section-gap px-gutter-mobile md:px-gutter max-w-[1440px] mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<!-- Left Sticky Column -->
+<div class="lg:col-span-5 lg:sticky lg:top-28 flex flex-col gap-6">
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em]">Residences</span>
+<h2 class="font-headline-lg text-headline-lg text-tertiary leading-[1.12]">
+          Four rooms, <em class="italic font-normal">considered</em>.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+          Architecture informed by the cadence of daylight and quiet habits of living. Each space tailored with unhurried precision and material permanence.
+        </p>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-tertiary group" href="#">
+<span class="relative pb-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-px after:bg-secondary after:transition-all group-hover:after:bg-primary-container">View all archival residences</span>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Scrolling Column Stack -->
+<div class="lg:col-span-7 flex flex-col gap-16">
+<!-- Room 01: Kitchen -->
+<article class="bg-surface-container-lowest rounded-[32px] overflow-hidden p-6 md:p-8 shadow-[0_12px_36px_-8px_rgba(35,27,24,0.05),0_4px_12px_-2px_rgba(35,27,24,0.03)] flex flex-col gap-6">
+<div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center hover:scale-102 transition-transform duration-700" data-alt="Modern architectural kitchen featuring floor-to-ceiling dark walnut cabinetry, monolithic Calacatta marble waterfall island, dark minimalist stools, bronze pendant fixtures, daylight from steel-framed garden doors, quiet luxury aesthetic" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWGcoe3rQOgI3uUxo4ZgWwnTWYFn-V1eg2JCa0r296h-TbM-9bm44CPSqwmVGfxrVUuD3s37i6pbkVmfzJVBhGJMbpRv_V2eVIBYDWDpqsXSYdWPR0-yTDP_wXxtrW3iScTw4B2NBtj339Q1mSLRuT6gRQ9Q8SlMApNqz413vIkRZba1tpfZV0yblAaM9eEuUAafNTLSyHYjjwTDRaS7SygzeJHkR-RKyJ1HOLfkU');"></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary">01</span>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Walnut</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Calacatta</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Burnished Brass</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary">The Kitchen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Bespoke dark walnut joinery paired with a monolithic Calacatta marble slab island and understated burnished brass hardware engineered for sensory tactile balance.
+            </p>
+</div>
+</article>
+<!-- Room 02: Bathroom -->
+<article class="bg-surface-container-lowest rounded-[32px] overflow-hidden p-6 md:p-8 shadow-[0_12px_36px_-8px_rgba(35,27,24,0.05),0_4px_12px_-2px_rgba(35,27,24,0.03)] flex flex-col gap-6">
+<div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center hover:scale-102 transition-transform duration-700" data-alt="Editorial bathroom interior featuring an organically sculpted freestanding travertine stone bathtub beside black steel-framed windows looking out to private garden, fluted glass screen, soft natural light, quiet tactile luxury" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlYL93vJFsM9huKzHRbshLarb98ijQJOxLa_onJ8LCEqcCkWkkmvXE9WZ_a_yWc_Pm45LndZ8Ytdn5HhrxLKOi3mM0xeoROcgyWb0OBQYsmqEq_hd2b8rLgnOU-cIOnzO-GQ25z8eBMPWzh4X9Wapp0rluG4UJwkAr-8P6t17ni7_DV4FuygqVkVvaliKuY2HgMlRL9vhMOdR9JQ70Ygdmxk219mJ6OYABSWbMUh8');"></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary">02</span>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Honed Limestone</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Cast Stone</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Fluted Glass</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary">The Bathroom</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Honed limestone surfaces with a sculpted monolithic stone tub framed against a lush courtyard garden aperture, creating an intimate ritual sanctuary.
+            </p>
+</div>
+</article>
+<!-- Room 03: Library -->
+<article class="bg-surface-container-lowest rounded-[32px] overflow-hidden p-6 md:p-8 shadow-[0_12px_36px_-8px_rgba(35,27,24,0.05),0_4px_12px_-2px_rgba(35,27,24,0.03)] flex flex-col gap-6">
+<div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden relative">
+<img alt="The Private Library" class="w-full h-full object-cover hover:scale-102 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA05wrYq5wUaRZVoOamvRmtWE5a0-719NV21OQ17btfHBTo_QAO8HdKbnb9MRrnPxltAm4muQ-ICsDgUL1B8cj5-HrnvU7nvblssmYo3otUoocbRLM3c3RQUQaEaGczxSniJ6pcS4DAE0HkLK6Cl_otfnFLtccpyxifdmFf9KHCNN2KXX_m6w6nXcysXYukn3Tz6Xea1Nock7MHwwjNcys7mOVIU2mu4ctjA8AlYpw"/>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary">03</span>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Patinated Bronze</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Dark Walnut</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Saddle Leather</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary">The Library</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Floor-to-ceiling dark walnut bookstacks with integrated bronze gallery ladders, patinated accents, and warm ambient luminescence curated for contemplation.
+            </p>
+</div>
+</article>
+<!-- Room 04: Garden Room -->
+<article class="bg-surface-container-lowest rounded-[32px] overflow-hidden p-6 md:p-8 shadow-[0_12px_36px_-8px_rgba(35,27,24,0.05),0_4px_12px_-2px_rgba(35,27,24,0.03)] flex flex-col gap-6">
+<div class="w-full aspect-[16/10] rounded-[24px] overflow-hidden relative">
+<img alt="The Garden Room" class="w-full h-full object-cover hover:scale-102 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByXWaJGt8CvNjfGsG-5cs8IAmaI5MZhTIkA0CwSSDf8EVGaWpBmZ3ognULu8FCJAuZUs0kZkKLsiEmJAzQQ-eB438wdiUUwCnR6MhZATVAK_HPJAQ121p4N_Wwg8nSP99UnvPsScr1EmWSgInS-i07jX7PUsWkwjhNtGxigvx5c9EGxq_JRNqIqb0f_8TUhotR-SjWHzl4Jxpz1t61C6Tnw7-FGXt3IuFWPqme2Cg"/>
+</div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary">04</span>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">English Oak</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Slate Flagstone</span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm uppercase tracking-wider">Belgian Linen</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary">The Garden Room</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Glazed courtyard conservatory featuring hand-hewn oak ceiling rafters, weathered English slate flagstones, and gossamer Belgian linen drapery filtering morning light.
+            </p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 4. CRAFT SECTION -->
+<section class="mt-section-gap px-gutter-mobile md:px-gutter max-w-[1440px] mx-auto w-full">
+<div class="bg-surface-container-lowest rounded-[36px] p-8 md:p-16 lg:p-20 shadow-[0_12px_36px_-8px_rgba(35,27,24,0.05)]">
+<div class="max-w-2xl mb-12">
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] block mb-3">Atelier Work</span>
+<h2 class="font-headline-lg text-headline-lg text-tertiary">
+          Made by hand, specified in <em class="italic font-normal">detail</em>.
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Col 1: Joinery -->
+<div class="flex flex-col gap-5 group">
+<div class="aspect-square rounded-[24px] overflow-hidden bg-surface-container">
+<img alt="Artisan walnut joinery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1nrGzavgnGBlbM9CjOZ9-kXVp_G9nr06k_UNtdi6RJNF-hE2C6gmGaxsyIS3NSY3KpF4NcxbAfrJ9SKAx3gMxTa86dOmoje2du3_-0pLGZekBLUlAf78HNA88e2RbX6BlQw9AA_w3WZBtwfcTlzUdl_mmzhCwZic87Dny7Rxrk5z4nvsuMfEli00l9MK4PBTu3jOMycDmRHPHhyfoM80eTtsqIEJg4MpLmml0fZw"/>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-tertiary">Joinery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Hand-cut mortise and tenon timber joints in English walnut, hand-waxed with organic beeswax to a soft matte tactile lustre.
+            </p>
+</div>
+</div>
+<!-- Col 2: Stone -->
+<div class="flex flex-col gap-5 group">
+<div class="aspect-square rounded-[24px] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Macro architectural detail of honed Calacatta marble slab showing delicate grey and gold veining, tactile smooth honed finish, soft natural directional lighting, luxury masonry craft" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD0mcbiXTjxZG5DNxM90yFZv_aeaQPKKOZB0gMrJ4hPsTrh0bRmqYSJTDm3vBdl3Q6HNoSIGAHJ54TZUzT_K0wnqIICwcAWcjLfhTQvpORPjCbF5p5BsySySnR7VxzluQxs75tcCVG4i8f_yB-JQKFX7gxbIU-CzqurTu5XPyjdFp44Awrlv1KSJlD9SYQXeNIWScIjJ09yLOFyxEuCFuXhw1HmsObW_uLfHNKAhjw');"></div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-tertiary">Stone</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Continuous slab matching across book-matched Calacatta and hand-chiselled limestone surrounds, resolved without exposed silicon joins.
+            </p>
+</div>
+</div>
+<!-- Col 3: Metalwork -->
+<div class="flex flex-col gap-5 group">
+<div class="aspect-square rounded-[24px] overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Extreme close-up of patinated architectural bronze hardware, hand-cast door lever with subtle burnished edges, velvety dark brown bronze patina, artisanal metalwork studio shot" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDx9ZuRMFC0MKZTUN7IriEjO8LYrDWEKu834eE3ObZ-YIejKNrJ3CSoHk3TAZPZ1cdhkUkQK3YM5dumZ4ndyJV5_t9eabLqsv8NOK2q-jwVGYk4XtABj85BKEZF3EajeuCpa_KG1_yQ8PQR7jn8DbxXHAWRXHCQyEYAIJbVfpFI5Vwo5IqYd2m339uBL2klL5VVfruMVAORNSFvAVA0TZ2JTffNnEwr14oF4IE5FoI');"></div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-tertiary">Metalwork</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Lost-wax cast handles and architectural bronze reveals patinated individually in our workshop using traditional cold-chemical techniques.
+            </p>
+</div>
+</div>
+</div>
+<div class="w-full h-px bg-secondary/35 my-10"></div>
+<p class="font-body-md text-body-md text-center text-on-surface-variant max-w-xl mx-auto">
+        Every piece drawn, sourced, and fitted by artisans we have worked with for over a decade.
+      </p>
+</div>
+</section>
+<!-- 5. OXBLOOD FEATURE SECTION 'OUR APPROACH' -->
+<section class="mt-section-gap px-gutter-mobile md:px-gutter max-w-[1440px] mx-auto w-full">
+<div class="bg-primary-container text-surface-container-lowest rounded-[36px] p-8 md:p-16 lg:p-20 shadow-2xl relative overflow-hidden">
+<!-- Ambient interior glow -->
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start relative z-10">
+<!-- Left Side: Narrative -->
+<div class="lg:col-span-5 flex flex-col justify-between h-full">
+<div>
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] block mb-4">The Journey</span>
+<h2 class="font-headline-lg text-headline-lg text-surface-container-lowest leading-[1.12]">
+              A calm process, from first conversation to <em class="italic font-normal text-secondary-fixed">last detail</em>.
+            </h2>
+<p class="font-body-lg text-body-lg text-surface-container-lowest/80 mt-6 max-w-md">
+              We insulate clients from site disruption through rigorous archival drawings, dedicated master builders, and single-source project stewardship.
+            </p>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center justify-center h-[54px] px-8 bg-surface-container-lowest text-primary-container font-label-md text-label-md rounded-full hover:bg-surface-bright transition-all shadow-md group" href="#enquiry">
+<span>Begin the conversation</span>
+<span class="material-symbols-outlined text-[18px] ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Right Side: Interactive Process Rows -->
+<div class="lg:col-span-7 flex flex-col divide-y-0" id="approach-accordion">
+<!-- Item 01 (Open) -->
+<div class="border-b border-secondary/40 py-6 transition-colors">
+<button class="w-full flex items-center justify-between text-left group" onclick="toggleAccordion(1)">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm text-secondary">01</span>
+<span class="font-headline-sm text-headline-sm text-surface-container-lowest">Introduction</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-2xl" id="icon-1">remove</span>
+</button>
+<div class="mt-4 pl-10 pr-4 text-surface-container-lowest/85 font-body-md text-body-md leading-relaxed" id="panel-1">
+              Mutual alignment begins with an unhurried consultation at your current home or our St. James’s studio. We examine your daily domestic rituals, timeline parameters, and architectural aspirations before formalising terms.
+            </div>
+</div>
+<!-- Item 02 -->
+<div class="border-b border-secondary/40 py-6 transition-colors">
+<button class="w-full flex items-center justify-between text-left group" onclick="toggleAccordion(2)">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm text-secondary">02</span>
+<span class="font-headline-sm text-headline-sm text-surface-container-lowest">Design development</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-2xl" id="icon-2">add</span>
+</button>
+<div class="hidden mt-4 pl-10 pr-4 text-surface-container-lowest/85 font-body-md text-body-md leading-relaxed" id="panel-2">
+              Comprehensive volumetric drawings, 1:1 scale joinery details, and hand-rendered spatial plans. We assemble physical material trays with limestone, patinated metals, and woven textiles for tactile approval.
+            </div>
+</div>
+<!-- Item 03 -->
+<div class="border-b border-secondary/40 py-6 transition-colors">
+<button class="w-full flex items-center justify-between text-left group" onclick="toggleAccordion(3)">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm text-secondary">03</span>
+<span class="font-headline-sm text-headline-sm text-surface-container-lowest">Specification</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-2xl" id="icon-3">add</span>
+</button>
+<div class="hidden mt-4 pl-10 pr-4 text-surface-container-lowest/85 font-body-md text-body-md leading-relaxed" id="panel-3">
+              Full tender documentation with zero ambiguity. Every fitting, mechanical line, acoustic membrane, and stone slab is pre-purchased and quarantined in our depot to avert project delays.
+            </div>
+</div>
+<!-- Item 04 -->
+<div class="border-b border-secondary/40 py-6 transition-colors">
+<button class="w-full flex items-center justify-between text-left group" onclick="toggleAccordion(4)">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm text-secondary">04</span>
+<span class="font-headline-sm text-headline-sm text-surface-container-lowest">Build</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-2xl" id="icon-4">add</span>
+</button>
+<div class="hidden mt-4 pl-10 pr-4 text-surface-container-lowest/85 font-body-md text-body-md leading-relaxed" id="panel-4">
+              Execution handled exclusively by our permanent guild of master carpenters, stonemasons, and engineers. We provide weekly photographic dispatches and private site walkthroughs.
+            </div>
+</div>
+<!-- Item 05 -->
+<div class="border-b border-secondary/40 py-6 transition-colors">
+<button class="w-full flex items-center justify-between text-left group" onclick="toggleAccordion(5)">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm text-secondary">05</span>
+<span class="font-headline-sm text-headline-sm text-surface-container-lowest">Aftercare</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-2xl" id="icon-5">add</span>
+</button>
+<div class="hidden mt-4 pl-10 pr-4 text-surface-container-lowest/85 font-body-md text-body-md leading-relaxed" id="panel-5">
+              A bespoke physical leather binder of warranties, maintenance protocols for all unlacquered metals and untreated stones, and scheduled seasonal check-ins during the first two years of residency.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. FEATURED RESIDENCE -->
+<section class="mt-section-gap px-gutter-mobile md:px-gutter max-w-[1440px] mx-auto w-full">
+<div class="bg-surface-container-lowest rounded-[36px] p-8 md:p-14 lg:p-16 shadow-[0_12px_36px_-8px_rgba(35,27,24,0.05)] grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Tall 3:4 Aspect Image -->
+<div class="lg:col-span-5 rounded-[28px] overflow-hidden aspect-[3/4] relative bg-surface-container">
+<div class="w-full h-full bg-cover bg-center hover:scale-102 transition-transform duration-700" data-alt="Architectural photograph of a restored Victorian Kensington townhouse interior with monolithic limestone soaking tub framed by tall steel garden windows, sheer linen drapery, and warm plaster finishes, quiet luxury editorial style" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDo4sX8JUJ-AtkvTfG4TMVjL7RnJ8oB6MHDwviq8RTc1-sGsH-p-sp0CfGxeb2hHxI6g3jHIawMYM0kjAe704Ufpbhy9_3XXLFoKimkCIvXU-U-WiTdnnvuB9cSd_gno9oZ7qt9eroT6Mc257YK5NzUiOGktCh6vZPId-2vccnL_SFUF0P5J89pkz7xQxH74Xn5Fd2UVvBt1ui9Vph3bivmVdUYhNMr40oYaMGeBO4');"></div>
+</div>
+<!-- Right: Narrative & Data Shelf -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] mb-3">Featured Residence</span>
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-6">
+          The Hollin House, <em class="italic font-normal">Kensington</em>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+          A comprehensive Victorian townhouse restoration combining classical proportion with restrained monolithic materials, private courtyard integration, and custom timber architecture.
+        </p>
+<!-- Architectural Metadata Shelf with Bronze Hairlines -->
+<div class="w-full border-t border-secondary/35 divide-y divide-secondary/35 font-body-md text-body-md">
+<div class="py-3.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Scope</span>
+<span class="text-tertiary font-medium text-right">Complete internal remodelling &amp; rear glazed wing</span>
+</div>
+<div class="py-3.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Duration</span>
+<span class="text-tertiary font-medium">9 months</span>
+</div>
+<div class="py-3.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Materials</span>
+<span class="text-tertiary font-medium text-right">Honed limestone, fluted timber, patinated bronze</span>
+</div>
+<div class="py-3.5 flex justify-between items-center">
+<span class="text-on-surface-variant">Architect</span>
+<span class="text-tertiary font-medium">Maison Orrin Atelier</span>
+</div>
+</div>
+<div class="mt-8">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary group" href="#">
+<span class="border-b border-secondary/40 pb-0.5 group-hover:border-secondary transition-colors">Read the monograph</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. SELECTED WORKS (HORIZONTAL SCROLL GALLERY) -->
+<section class="mt-section-gap px-gutter-mobile md:px-gutter max-w-[1440px] mx-auto w-full">
+<!-- Header with Prev/Next Controls -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10">
+<div>
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] block mb-2">Commissions</span>
+<h2 class="font-headline-lg text-headline-lg text-tertiary">Selected works</h2>
+</div>
+<!-- Carousel Navigation Elements -->
+<div class="flex items-center gap-4">
+<button aria-label="Previous Project" class="w-12 h-12 rounded-full border border-secondary/40 flex items-center justify-center text-tertiary hover:bg-secondary/10 transition-colors" onclick="scrollGallery(-1)">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button aria-label="Next Project" class="w-12 h-12 rounded-full border border-secondary/40 flex items-center justify-center text-tertiary hover:bg-secondary/10 transition-colors" onclick="scrollGallery(1)">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Gallery Container -->
+<div class="flex gap-8 overflow-x-auto scroll-smooth pb-6 pt-2 snap-x snap-mandatory" id="gallery-slider" style="scrollbar-width: none; -ms-overflow-style: none;">
+<!-- Work 1 -->
+<div class="shrink-0 w-[320px] md:w-[380px] snap-start flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[28px] overflow-hidden bg-surface-container relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Editorial kitchen interior photograph with walnut cabinets, monolithic marble island, and steel garden doors with soft diffused morning light, quiet minimalism" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDeNrq-1XKX7Fv9OjMoqlRT7FUNE2iKMjEPQayh_hHYrwwpqtycBwzlmEB0tX0mG312gMBgSInMhsEKOG1PnjfdjYSbn9OSvgTE2Yt1zRUYd3y6EKWGro-npA7k7_ckmWR5A1Ic_OeXcPQg5qbTwnxW93VHfZZINYSl3Ar8VeY8o6S7pRzNXi26EiVTnYYFIQGlm2v1lxEHJOuyM3UqbSv9IgGHOByQlqZ0GwBv_JE');"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary group-hover:text-primary-container transition-colors">The Pavilion Kitchen</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Holland Park · 2026</span>
+</div>
+</div>
+<!-- Work 2 -->
+<div class="shrink-0 w-[320px] md:w-[380px] snap-start flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[28px] overflow-hidden bg-surface-container relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Serene dining room interior with warm plaster walls, arch window, wooden dining table, brass wall sconces, quiet luxury" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcOAXbLe2R6-EiMVIGYKF-zOpI5ccCsUXWiRLhqaLFB93mPnMBL_J6vN5jg9otSBPo4h43jRpvEJ7M4Fo98zdfCW7J0OIwE1Ef1boBQaXfJuLXEmFLFMwjPp0SjlkQd2ZWMeC51W0RkEhiVyt52Xk2IueTzsR6ke7nnvqERa0bkQQpCK1pT3Q4wCbf4FB-miQ_AyQSRe9f1ucJwkUg2hX21rFYRSamqQGsOdUO_Qk');"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary group-hover:text-primary-container transition-colors">The Dining Gallery</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Mayfair · 2025</span>
+</div>
+</div>
+<!-- Work 3 -->
+<div class="shrink-0 w-[320px] md:w-[380px] snap-start flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[28px] overflow-hidden bg-surface-container relative">
+<img alt="The Private Library" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA05wrYq5wUaRZVoOamvRmtWE5a0-719NV21OQ17btfHBTo_QAO8HdKbnb9MRrnPxltAm4muQ-ICsDgUL1B8cj5-HrnvU7nvblssmYo3otUoocbRLM3c3RQUQaEaGczxSniJ6pcS4DAE0HkLK6Cl_otfnFLtccpyxifdmFf9KHCNN2KXX_m6w6nXcysXYukn3Tz6Xea1Nock7MHwwjNcys7mOVIU2mu4ctjA8AlYpw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary group-hover:text-primary-container transition-colors">The Private Library</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Belgravia · 2025</span>
+</div>
+</div>
+<!-- Work 4 -->
+<div class="shrink-0 w-[320px] md:w-[380px] snap-start flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[28px] overflow-hidden bg-surface-container relative">
+<img alt="Courtyard Conservatory" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByXWaJGt8CvNjfGsG-5cs8IAmaI5MZhTIkA0CwSSDf8EVGaWpBmZ3ognULu8FCJAuZUs0kZkKLsiEmJAzQQ-eB438wdiUUwCnR6MhZATVAK_HPJAQ121p4N_Wwg8nSP99UnvPsScr1EmWSgInS-i07jX7PUsWkwjhNtGxigvx5c9EGxq_JRNqIqb0f_8TUhotR-SjWHzl4Jxpz1t61C6Tnw7-FGXt3IuFWPqme2Cg"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary group-hover:text-primary-container transition-colors">Courtyard Conservatory</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Cotswolds · 2024</span>
+</div>
+</div>
+<!-- Work 5 -->
+<div class="shrink-0 w-[320px] md:w-[380px] snap-start flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-[4/5] rounded-[28px] overflow-hidden bg-surface-container relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="Editorial bathroom interior featuring freestanding carved stone bathtub against garden aperture, travertine wall surfaces, linen drape" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqAKeMzbtIux20VSkK6CvBPLXAcoKycJrIUs0Pl1Xo1PCUh_qaJoU6lbTgamhNOJhG4XaYu5DILhY9do9WE3M84vdeBrMBFvC_UHXHKc50uGY4DwElpsCIbDP0JNRInIKTRoAGXAQasPAFnnqc0I4mNJvvRoxEdSlXDnwvLnSkPksFoewkVeCgpimTEIfiGODc0s6COcN1gFsQPuyD8_iHzBf05VI3vcgSXVygjAY');"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary group-hover:text-primary-container transition-colors">The Garden Bath</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Chelsea · 2024</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. CLIENT WORDS -->
+<section class="mt-section-gap px-gutter-mobile md:px-gutter max-w-[1440px] mx-auto w-full">
+<div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+<!-- Architectural Quote Glyph -->
+<span class="font-display text-[5rem] text-secondary leading-none select-none -mb-6">“</span>
+<blockquote class="font-headline-lg text-headline-lg text-tertiary italic leading-snug">
+        They listened more than they spoke, and the house now feels as though it was always meant to be this way.
+      </blockquote>
+<div class="mt-8 flex flex-col items-center gap-1">
+<cite class="font-body-lg text-body-lg text-tertiary font-medium not-italic">Charlotte &amp; James A.</cite>
+<span class="font-body-md text-body-md text-on-surface-variant">Georgian Townhouse, Kensington · 2025</span>
+</div>
+<!-- Discrete Bronze Pagination Indicators -->
+<div class="flex items-center gap-2 mt-8">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="w-2 h-2 rounded-full bg-secondary/30"></span>
+<span class="w-2 h-2 rounded-full bg-secondary/30"></span>
+</div>
+</div>
+</section>
+<!-- 9. ENQUIRY SECTION -->
+<section class="mt-section-gap px-gutter-mobile md:px-gutter max-w-[1440px] mx-auto w-full" id="enquiry">
+<div class="bg-surface-container-lowest rounded-[36px] p-8 md:p-16 lg:p-20 shadow-[0_24px_60px_-12px_rgba(35,27,24,0.06)] grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- Left Column: Atelier Contact -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] block mb-3">Introduction</span>
+<h2 class="font-headline-lg text-headline-lg text-tertiary mb-6">
+            Let us meet your <em class="italic font-normal">home</em>.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-10">
+            Tell us a little about your residence. A partner of our atelier will review your enquiry and respond privately within two working days.
+          </p>
+</div>
+<div class="space-y-6 pt-6 border-t border-secondary/30">
+<div>
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] block mb-1">Studio Address</span>
+<p class="font-body-md text-body-md text-tertiary">14 St. James's Place, London SW1A 1NP</p>
+</div>
+<div>
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] block mb-1">Telephone</span>
+<p class="font-body-md text-body-md text-tertiary">+44 (0)20 7946 0882</p>
+</div>
+<div>
+<span class="font-eyebrow text-eyebrow uppercase text-secondary tracking-[0.16em] block mb-1">Confidential Dispatch</span>
+<p class="font-body-md text-body-md text-tertiary">private@maisonorrin.com</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Consultation Form -->
+<div class="lg:col-span-7">
+<form class="flex flex-col gap-8" onsubmit="event.preventDefault(); showConfirmation();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-eyebrow text-eyebrow uppercase tracking-[0.16em] text-secondary">Full Name</label>
+<input class="w-full bg-transparent border-b border-tertiary/20 pb-2 font-body-md text-body-md text-tertiary placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary-container transition-colors" placeholder="Lord / Lady / Dr / Mr / Ms" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-eyebrow text-eyebrow uppercase tracking-[0.16em] text-secondary">Email Address</label>
+<input class="w-full bg-transparent border-b border-tertiary/20 pb-2 font-body-md text-body-md text-tertiary placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary-container transition-colors" placeholder="client@residence.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-eyebrow text-eyebrow uppercase tracking-[0.16em] text-secondary">Telephone Number</label>
+<input class="w-full bg-transparent border-b border-tertiary/20 pb-2 font-body-md text-body-md text-tertiary placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary-container transition-colors" placeholder="+44 ..." type="tel"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-eyebrow text-eyebrow uppercase tracking-[0.16em] text-secondary">Property Location</label>
+<input class="w-full bg-transparent border-b border-tertiary/20 pb-2 font-body-md text-body-md text-tertiary placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary-container transition-colors" placeholder="e.g. Mayfair, Oxfordshire, Cap d'Antibes" type="text"/>
+</div>
+</div>
+<!-- Scope Selection Pills -->
+<div class="flex flex-col gap-3">
+<label class="font-eyebrow text-eyebrow uppercase tracking-[0.16em] text-secondary">Approximate Scope</label>
+<div class="flex flex-wrap gap-3" id="scope-pills">
+<button class="scope-pill px-5 py-2.5 rounded-full border border-secondary/35 text-tertiary font-label-md text-label-md hover:bg-secondary/10 transition-colors" onclick="selectScope(this)" type="button">
+                Single Room
+              </button>
+<button class="scope-pill px-5 py-2.5 rounded-full border border-secondary/35 text-tertiary font-label-md text-label-md hover:bg-secondary/10 transition-colors" onclick="selectScope(this)" type="button">
+                Several Rooms
+              </button>
+<button class="scope-pill active-pill px-5 py-2.5 rounded-full bg-primary-container text-surface-container-lowest font-label-md text-label-md transition-colors" onclick="selectScope(this)" type="button">
+                Whole House
+              </button>
+<button class="scope-pill px-5 py-2.5 rounded-full border border-secondary/35 text-tertiary font-label-md text-label-md hover:bg-secondary/10 transition-colors" onclick="selectScope(this)" type="button">
+                Architectural Extension
+              </button>
+</div>
+</div>
+<!-- Architectural Notes -->
+<div class="flex flex-col gap-2">
+<label class="font-eyebrow text-eyebrow uppercase tracking-[0.16em] text-secondary">Architectural Notes &amp; Desired Timing</label>
+<textarea class="w-full bg-transparent border-b border-tertiary/20 pb-2 font-body-md text-body-md text-tertiary placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary-container transition-colors resize-none" placeholder="Tell us about the home's period, existing state, and aspirations..." rows="3"></textarea>
+</div>
+<div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<button class="h-[54px] px-10 rounded-full bg-primary-container text-surface-container-lowest font-label-md text-label-md hover:bg-primary transition-all duration-300 shadow-md self-start" type="submit">
+              Request an introduction
+            </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+              Held in strict professional confidence.
+            </span>
+</div>
+<!-- Discreet feedback prompt -->
+<div class="hidden p-4 rounded-xl bg-surface-container text-primary-container font-body-md text-body-md" id="confirmation-banner">
+            Thank you. Your enquiry has been received and routed directly to Studio Principal.
+          </div>
+</form>
+</div>
+</div>
+</section>
+<!-- Interactive Logic -->
+<script>
+    function toggleAccordion(index) {
+      const panel = document.getElementById(`panel-${index}`);
+      const icon = document.getElementById(`icon-${index}`);
+      const isHidden = panel.classList.contains('hidden');
+
+      // Close all
+      for (let i = 1; i <= 5; i++) {
+        const p = document.getElementById(`panel-${i}`);
+        const ic = document.getElementById(`icon-${i}`);
+        if (p) p.classList.add('hidden');
+        if (ic) ic.innerText = 'add';
+      }
+
+      // If clicked was hidden, open it
+      if (isHidden) {
+        panel.classList.remove('hidden');
+        icon.innerText = 'remove';
+      }
+    }
+
+    function scrollGallery(direction) {
+      const container = document.getElementById('gallery-slider');
+      const offset = 400 * direction;
+      container.scrollBy({ left: offset, behavior: 'smooth' });
+    }
+
+    function selectScope(btn) {
+      const buttons = document.querySelectorAll('.scope-pill');
+      buttons.forEach(b => {
+        b.className = 'scope-pill px-5 py-2.5 rounded-full border border-secondary/35 text-tertiary font-label-md text-label-md hover:bg-secondary/10 transition-colors';
+      });
+      btn.className = 'scope-pill px-5 py-2.5 rounded-full bg-primary-container text-surface-container-lowest font-label-md text-label-md transition-colors';
+    }
+
+    function showConfirmation() {
+      const banner = document.getElementById('confirmation-banner');
+      if (banner) {
+        banner.classList.remove('hidden');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-tertiary text-surface-container-low rounded-t-[36px] mt-section-gap relative overflow-hidden"><div class="absolute -top-12 left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none opacity-[0.07]"><span class="font-display text-[9rem] md:text-[13rem] tracking-tight leading-none text-surface-container-lowest block">Maison Orrin</span></div><div class="max-w-[1440px] mx-auto px-gutter-mobile md:px-gutter pt-space-xl pb-space-lg relative z-10"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-xl"><div class="md:col-span-5 flex flex-col justify-between pr-space-md"><div class="mb-space-md"><div class="flex items-center gap-space-xs mb-space-sm"><div class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center"><span class="font-headline-sm text-surface-container-lowest text-[10px] leading-none">O</span></div><span class="font-headline-sm text-headline-sm text-surface-container-lowest">Maison Orrin</span></div><p class="font-body-md text-body-md text-on-tertiary-container max-w-sm">Private residential architectural renovations and interior restoration commissions executed with unhurried rigor.</p></div><div><span class="font-eyebrow text-eyebrow uppercase text-secondary block mb-space-xs">Folio Dispatch</span><form class="flex items-center border-b border-secondary/40 pb-2 max-w-sm group focus-within:border-secondary"><input class="bg-transparent font-body-md text-body-md text-surface-container-lowest placeholder:text-on-tertiary-container focus:outline-none w-full" placeholder="Join the confidential private letter" type="email"/><button aria-label="Subscribe" class="text-secondary hover:text-surface-container-lowest transition-colors pl-2" type="submit"><span class="material-symbols-outlined text-lg">arrow_forward</span></button></form></div></div><div class="md:col-span-2"><span class="font-eyebrow text-eyebrow uppercase text-secondary block mb-space-sm">Studio</span><ul class="space-y-space-xs font-body-md text-body-md"><li class="nav-active-wrap"><a class="text-on-tertiary-container hover:text-surface-container-lowest transition-colors" data-path="approach" href="#">Philosophie</a></li><li><a class="text-on-tertiary-container hover:text-surface-container-lowest transition-colors" data-path="craft" href="#">Atelier &amp; Stone</a></li><li><a class="text-on-tertiary-container hover:text-surface-container-lowest transition-colors" data-path="archive" href="#">Archival Folio</a></li><li><a class="text-on-tertiary-container hover:text-surface-container-lowest transition-colors" data-path="commissions" href="#">Commissions</a></li></ul></div><div class="md:col-span-2"><span class="font-eyebrow text-eyebrow uppercase text-secondary block mb-space-sm">Residences</span><ul class="space-y-space-xs font-body-md text-body-md"><li><a class="text-on-tertiary-container hover:text-surface-container-lowest transition-colors" data-path="residences" href="#">Hôtel Particulier</a></li><li><a class="text-on-tertiary-container hover:text-surface-container-lowest transition-colors" data-path="residences" href="#">The Cotswold Manse</a></li><li><a class="text-on-tertiary-container hover:text-surface-container-lowest transition-colors" data-path="residences" href="#">Palazzo San Marco</a></li><li><a class="text-on-tertiary-container hover:text-surface-container-lowest transition-colors" data-path="residences" href="#">Private Islands</a></li></ul></div><div class="md:col-span-3"><span class="font-eyebrow text-eyebrow uppercase text-secondary block mb-space-sm">Contact</span><div class="space-y-space-xs font-body-md text-body-md text-on-tertiary-container"><p>14 Place Vendôme, 75001 Paris</p><p>By Appointment Only</p><p class="pt-space-xs"><a class="text-surface-container-lowest hover:text-secondary underline underline-offset-4 decoration-secondary/50 transition-colors" data-path="appointment" href="#">appointments@maisonorrin.com</a></p></div></div></div><div class="pt-space-md border-t border-tertiary-container flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-tertiary-container"><p>© 2025 Maison Orrin S.A. All rights reserved.</p><div class="flex items-center gap-space-md"><a class="hover:text-surface-container-lowest transition-colors" data-path="discretion-charter" href="#">Discretion Charter</a><a class="hover:text-surface-container-lowest transition-colors" data-path="legal-provisions" href="#">Legal Provisions</a><a class="hover:text-surface-container-lowest transition-colors" data-path="atelier-terms" href="#">Atelier Terms</a></div></div></div></footer></body></html>
